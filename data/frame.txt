@@ -2,441 +2,436 @@
 158
 
 idle1
-image data/megasprite.png
-x 530
-y 40
-w 80
-h 90
+image data/aset3.jpg
+x 123
+y 81
+w 63
+h 105
 
 idle2
-image data/megasprite.png
-x 616
-y 40
-w 80
-h 90
+image data/aset3.jpg
+x 190
+y 81
+w 63
+h 105
 
 idle3
-image data/megasprite.png
-x 702
-y 40
-w 80
-h 90
+image data/aset3.jpg
+x 253
+y 81
+w 63
+h 105
 
 idleshoot1
-image data/megasprite.png
-x 5
-y 418
-w 80
-h 90
-
-
-
-
-
+image data/aset4.jpg
+x 756
+y 524
+w 87
+h 85
 
 
 run1
-image data/megasprite.png
-x 800
-y 43
-w 75
-h 90
+image data/aset3.jpg
+x 55
+y 209
+w 99
+h 100
 
 run2
-image data/megasprite.png
-x 876
-y 43
-w 54
-h 90
+image data/aset3.jpg
+x 161
+y 209
+w 99
+h 100
 
 run3
-image data/megasprite.png
-x 929
-y 43
-w 60
-h 90
+image data/aset3.jpg
+x 266
+y 209
+w 99
+h 100
 
 run4
-image data/megasprite.png
-x 989
-y 43
-w 81
-h 90
+image data/aset3.jpg
+x 372
+y 209
+w 99
+h 100
 
 run5
-image data/megasprite.png
-x 1071
-y 43
-w 83
-h 90
+image data/aset3.jpg
+x 586
+y 209
+w 99
+h 100
 
 run6
-image data/megasprite.png
-x 1157
-y 43
-w 72
-h 90
+image data/aset3.jpg
+x 55
+y 209
+w 99
+h 100
 
 run7
-image data/megasprite.png
-x 1228
-y 43
-w 57
-h 90
+image data/aset3.jpg
+x 161
+y 209
+w 99
+h 100
 
 run8
-image data/megasprite.png
-x 1287
-y 43
-w 63
-h 90
+image data/aset3.jpg
+x 266
+y 209
+w 99
+h 100
 
 run9
-image data/megasprite.png
-x 1355
-y 43
-w 80
-h 90
+image data/aset3.jpg
+x 372
+y 209
+w 99
+h 100
 
 run10
-image data/megasprite.png
-x 1435
-y 43
-w 86
-h 90
+image data/aset3.jpg
+x 586
+y 209
+w 99
+h 100
 
 run11
-image data/megasprite.png
-x 1522
-y 43
-w 75
-h 90
+image data/aset3.jpg
+x 55
+y 209
+w 99
+h 100
 
 runshoot1
-image data/megasprite.png
-x 724
-y 173
+image data/aset4.jpg
+x 30
+y 368
 w 75
-h 90
+h 82
 
 runshoot2
-image data/megasprite.png
-x 799
-y 173
-w 82
-h 90
+image data/aset4.jpg
+x 126
+y 368
+w 116
+h 87
 
 runshoot3
-image data/megasprite.png
-x 880
-y 173
-w 89
-h 90
+image data/aset4.jpg
+x 258
+y 332
+w 119
+h 124
 
 
 runshoot4
-image data/megasprite.png
-x 970
-y 173
-w 98
-h 90
+image data/aset4.jpg
+x 394
+y 322
+w 93
+h 133
 
 runshoot5
-image data/megasprite.png
-x 1068
-y 173
-w 88
-h 90
+image data/aset4.jpg
+x 30
+y 368
+w 75
+h 82
 
 runshoot6
-image data/megasprite.png
-x 1158
-y 173
-w 77
-h 90
+image data/aset4.jpg
+x 126
+y 368
+w 116
+h 87
 
 runshoot7
-image data/megasprite.png
-x 1236
-y 173
-w 83
-h 90
+image data/aset4.jpg
+x 258
+y 332
+w 119
+h 124
 
 runshoot8
-image data/megasprite.png
-x 1320
-y 173
-w 87
-h 90
+image data/aset4.jpg
+x 394
+y 322
+w 93
+h 133
 
 runshoot9
-image data/megasprite.png
-x 1408
-y 173
-w 95
-h 90
+image data/aset4.jpg
+x 30
+y 368
+w 75
+h 82
 
 runshoot10
-image data/megasprite.png
-x 1503
-y 173
-w 90
-h 90
+image data/aset4.jpg
+x 126
+y 368
+w 116
+h 87
 
 
 
 
 dick1
-image data/megasprite.png
-x 443
-y 439
-w 68
-h 69
+image data/aset3.jpg
+x 415
+y 79
+w 60
+h 90
 
 dick2
-image data/megasprite.png
-x 514
-y 439
-w 68
-h 69
+image data/aset3.jpg
+x 488
+y 99
+w 60
+h 90
 
 dick3
-image data/megasprite.png
-x 585
-y 439
-w 68
-h 69
+image data/aset3.jpg
+x 415
+y 79
+w 60
+h 90
 
 dick4
-image data/megasprite.png
-x 656
-y 439
-w 68
-h 69
+image data/aset3.jpg
+x 488
+y 99
+w 60
+h 90
 
 
 
 
 flyingup1
-image data/megasprite.png
-x 2
-y 181
-w 62
-h 95
+image data/aset3.jpg
+x 122
+y 340
+w 94
+h 113
 
 flyingup2
-image data/megasprite.png
-x 76
-y 170
-w 42
-h 107
+image data/aset3.jpg
+x 229
+y 325
+w 78
+h 85
 
 flyingup3
-image data/megasprite.png
-x 127
-y 160
+image data/aset3.jpg
+x 323
+y 327
 w 52
-h 117
+h 91
 
 flyingup4
-image data/megasprite.png
-x 185
-y 171
-w 60
-h 107
+image data/aset3.jpg
+x 611
+y 327
+w 81
+h 84
 
 flyingup5
-image data/megasprite.png
-x 248
-y 169
-w 70
-h 107
+image data/aset3.jpg
+x 701
+y 338
+w 86
+h 96
 
 
 
 flyingupshoot1
-image data/megasprite.png
-x 2
-y 302
-w 77
-h 95
+image data/aset4.jpg
+x 50
+y 496
+w 141
+h 100
 
 flyingupshoot2
-image data/megasprite.png
-x 79
-y 293
-w 64
-h 107
+image data/aset4.jpg
+x 226
+y 536
+w 98
+h 83
 
 flyingupshoot3
-image data/megasprite.png
-x 144
-y 280
-w 70
-h 117
+image data/aset4.jpg
+x 347
+y 522
+w 135
+h 106
 
 flyingupshoot4
-image data/megasprite.png
-x 212
-y 292
-w 82
-h 107
+image data/aset4.jpg
+x 510
+y 503
+w 100
+h 83
 
 flyingupshoot5
-image data/megasprite.png
-x 295
-y 294
-w 80
-h 107
+image data/aset4.jpg
+x 50
+y 496
+w 141
+h 100
+
 
 
 
 
 landing1
-image data/megasprite.png
-x 330
-y 180
-w 62
-h 95
+image data/aset3.jpg
+x 190
+y 81
+w 63
+h 105
 
 landing2
-image data/megasprite.png
-x 392
-y 195
-w 77
-h 82
+image data/aset3.jpg
+x 253
+y 81
+w 63
+h 105
 
 
 
 hurting1
-image data/megasprite.png
-x 15
-y 798
-w 80
-h 95
+image data/aset3.jpg
+x 711
+y 209
+w 75
+h 101
 
 hurting2
-image data/megasprite.png
-x 87
-y 798
-w 80
-h 95
+image data/aset3.jpg
+x 794
+y 209
+w 75
+h 101
 
 hurting3
-image data/megasprite.png
-x 171
-y 798
-w 80
-h 95
+image data/aset3.jpg
+x 879
+y 209
+w 75
+h 101
 
 hurting4
-image data/megasprite.png
-x 253
-y 798
-w 80
-h 95
+image data/aset3.jpg
+x 711
+y 209
+w 75
+h 101
 
 hurting5
-image data/megasprite.png
-x 341
-y 798
-w 80
-h 95
+image data/aset3.jpg
+x 794
+y 209
+w 75
+h 101
 
 hurting6
-image data/megasprite.png
-x 425
-y 798
-w 80
-h 95
+image data/aset3.jpg
+x 879
+y 209
+w 75
+h 101
 
 hurting7
-image data/megasprite.png
-x 513
-y 798
-w 80
-h 95
+image data/aset3.jpg
+x 711
+y 209
+w 75
+h 101
 
 hurting8
-image data/megasprite.png
-x 596
-y 798
-w 80
-h 95
+image data/aset3.jpg
+x 794
+y 209
+w 75
+h 101
 
 hurting9
-image data/megasprite.png
-x 685
-y 798
-w 80
-h 95
+image data/aset3.jpg
+x 879
+y 209
+w 75
+h 101
 
 hurting10
-image data/megasprite.png
-x 772
-y 798
-w 80
-h 95
+image data/aset3.jpg
+x 711
+y 209
+w 75
+h 101
 
 
 
 
 bullet1_1
-image data/megasprite.png
-x 1
-y 950
-w 26
-h 26
+image data/asset2.png
+x 153
+y 358
+w 44
+h 30
 
 bullet1_2
-image data/megasprite.png
-x 52
-y 942
-w 40
-h 40
+image data/asset2.png
+x 206
+y 358
+w 44
+h 30
 
 bullet1_3
-image data/megasprite.png
-x 110
-y 929
-w 60
-h 60
+image data/asset2.png
+x 256
+y 358
+w 44
+h 30
 
 bullet1_4
-image data/megasprite.png
-x 198
-y 948
-w 100
+image data/asset2.png
+x 310
+y 358
+w 44
 h 30
 
 bullet1_5
-image data/megasprite.png
-x 294
-y 948
-w 90
+image data/asset2.png
+x 153
+y 358
+w 44
 h 30
 
 bullet1_6
-image data/megasprite.png
-x 403
-y 948
-w 100
+image data/asset2.png
+x 206
+y 358
+w 44
 h 30
 
 bullet1_7
-image data/megasprite.png
-x 536
-y 929
-w 100
-h 55
+image data/asset2.png
+x 256
+y 358
+w 44
+h 30
 
 bullet1_8
-image data/megasprite.png
-x 661
-y 929
-w 100
-h 55
-
+image data/asset2.png
+x 310
+y 358
+w 44
+h 30
 
 bullet2_1
 image data/enemysprite1.png
