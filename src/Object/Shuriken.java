@@ -7,9 +7,9 @@ import Anima.Animation;
 import Anima.Loader_CacheData;
 import State.WorldState;
 
-public class BluBullet extends Bullet{
+public class Shuriken extends Bullet{
 
-    public BluBullet(float x, float y,WorldState gameWorld) {
+    public Shuriken(float x, float y,WorldState gameWorld) {
         super(x, y, 60, 30, 1.0f, 50, gameWorld);
         //TODO Auto-generated constructor stub
         forwardBulletAnim = Loader_CacheData.getInstance().getAnimation("bluefire");
@@ -65,7 +65,7 @@ public class BluBullet extends Bullet{
             setBlood(0);
             object.setBlood(object.getBlood() - getDamage());
             object.setState(BEHURT);
-            System.out.println("Bullet set behurt for enemy");
+            // System.out.println("Bullet set behurt for enemy");
         }
     }
 

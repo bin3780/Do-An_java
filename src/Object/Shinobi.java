@@ -10,10 +10,10 @@ import Anima.Animation;
 
 public class Shinobi extends Character{
 
-    private Animation runForwardAnim, runBackAnim, runShootingForwarAnim, runShootingBackAnim;
-    private Animation idleForwardAnim, idleBackAnim, idleShootingForwardAnim, idleShootingBackAnim;
+    private Animation runForwardAnim, runBackAnim, runShootingForwarAnim, runShootingBackAnim,runAttackFroAnimation,runAttackBackAnimation,flyShootingForwardAnim,flyShootingBackAnim;
+    private Animation idleForwardAnim, idleBackAnim, idleShootingForwardAnim, idleShootingBackAnim,idleAttackForwardAnimation,idleAttackBackAnimation;
     private Animation dickForwardAnim, dickBackAnim;
-    private Animation flyForwardAnim, flyBackAnim, flyShootingForwardAnim, flyShootingBackAnim;
+    private Animation flyForwardAnim, flyBackAnim, flyAttackForwardAnim, flyAttackBackAnim;
     private Animation landingForwardAnim, landingBackAnim;
     
     private Animation climWallForward, climWallBack;
@@ -151,7 +151,7 @@ public class Shinobi extends Character{
             
             shooting1.play();
             
-            Bullet bullet = new BluBullet(getPosX(), getPosY(), getGameWorld());
+            Bullet bullet = new Shuriken(getPosX(), getPosY(), getGameWorld());
             if(getDirection() == LEFT_DIR) {
                 bullet.setSpeedX(-10);
                 bullet.setPosX(bullet.getPosX() - 40);

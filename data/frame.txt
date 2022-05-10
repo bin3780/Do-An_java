@@ -23,7 +23,7 @@ w 63
 h 105
 
 idleshoot1
-image data/aset4.jpg
+image data/aset4.png
 x 756
 y 524
 w 87
@@ -108,75 +108,75 @@ w 99
 h 100
 
 runshoot1
-image data/aset4.jpg
-x 30
-y 368
+image data/aset4.png
+x 40
+y 325   
 w 75
-h 82
+h 125
 
 runshoot2
-image data/aset4.jpg
-x 126
-y 368
+image data/aset4.png
+x 120
+y 325
 w 116
-h 87
+h 125
 
 runshoot3
-image data/aset4.jpg
-x 258
-y 332
+image data/aset4.png
+x 267
+y 325
 w 119
-h 124
+h 125
 
 
 runshoot4
-image data/aset4.jpg
-x 394
-y 322
+image data/aset4.png
+x 415
+y 325
 w 93
-h 133
+h 125
 
 runshoot5
-image data/aset4.jpg
-x 30
-y 368
+image data/aset4.png
+x 40
+y 325
 w 75
-h 82
+h 125
 
 runshoot6
-image data/aset4.jpg
-x 126
-y 368
+image data/aset4.png
+x 120
+y 325
 w 116
-h 87
+h 125
 
 runshoot7
-image data/aset4.jpg
-x 258
-y 332
+image data/aset4.png
+x 267
+y 325
 w 119
-h 124
+h 125
 
 runshoot8
-image data/aset4.jpg
-x 394
-y 322
+image data/aset4.png
+x 415
+y 325
 w 93
-h 133
+h 125
 
 runshoot9
-image data/aset4.jpg
-x 30
-y 368
+image data/aset4.png
+x 40
+y 325
 w 75
-h 82
+h 125
 
 runshoot10
-image data/aset4.jpg
-x 126
-y 368
+image data/aset4.png
+x 120
+y 325
 w 116
-h 87
+h 125
 
 
 
@@ -250,38 +250,38 @@ h 96
 
 
 flyingupshoot1
-image data/aset4.jpg
+image data/aset4.png
 x 50
 y 496
 w 141
 h 100
 
 flyingupshoot2
-image data/aset4.jpg
+image data/aset4.png
 x 226
-y 536
+y 500
 w 98
-h 83
+h 100
 
 flyingupshoot3
-image data/aset4.jpg
+image data/aset4.png
 x 347
 y 522
 w 135
 h 106
 
 flyingupshoot4
-image data/aset4.jpg
+image data/aset4.png
 x 510
 y 503
 w 100
-h 83
+h 100
 
 flyingupshoot5
-image data/aset4.jpg
-x 50
-y 496
-w 141
+image data/aset4.png
+x 226
+y 500
+w 98
 h 100
 
 

@@ -70,11 +70,12 @@ public class WorldState extends State
     public WorldState(PanelGame gamePanel) {
         super(gamePanel);
         //TODO Auto-generated constructor stub
-        texts1[0] = "We are heros, and our mission is protecting our Home\nEarth....";
-        texts1[1] = "There was a Monster from University on Earth in 10 years\n"
-                + "and we lived in the scare in that 10 years....";
-        texts1[2] = "Now is the time for us, kill it and get freedom!....";
-        texts1[3] = "      LET'S GO!.....";
+        texts1[0] = "Nhân danh bin đẹp trai và hoàng đẹp gái \nFROM\n19DTHC3....";
+        texts1[1] = "Chúng em sẽ giải cứu bạn Vũ Trung Nguyên 3Đ \n"
+                + "và sau đó sẽ giúp bạn ấy thẳng raaa....";
+        texts1[2] = "thử thách 6 ngày 6 đêm cứu bạn Nguyên...."
+        +"\nai cản cũng không cứu!!";
+        texts1[3] = "      GÉT GÔOOOOOOOOOOO!.....";
         textTutorial = texts1[0];
 
         
@@ -207,18 +208,14 @@ public class WorldState extends State
                 int yMid = FrameGame.SCREEN_HEIGHT/2 - 15;
                 int y1 = yMid - FrameGame.SCREEN_HEIGHT/2 - openIntroGameY/2;
                 int y2 = yMid + openIntroGameY/2;
-
-                g2.setColor(Color.BLACK);
-                g2.fillRect(0, y1, FrameGame.SCREEN_WIDTH, FrameGame.SCREEN_HEIGHT/2);
-                g2.fillRect(0, y2, FrameGame.SCREEN_WIDTH, FrameGame.SCREEN_HEIGHT/2);
                 
                 if(storyTutorial >= 1){
                     g2.drawImage(avatar.getImage(), 600, 350, null);
-                    g2.setColor(Color.BLUE);
-                    g2.fillRect(280, 450, 350, 80);
-                    g2.setColor(Color.WHITE);
+                    g2.setColor(Color.white);
+                    g2.fillRect(150, 480, 450, 150);
+                    g2.setColor(Color.black);
                     String text = textTutorial.substring(0, currentSize - 1);
-                    drawString(g2, text, 290, 480);
+                    drawString(g2, text, 160, 480);
                 }
                 
                 break;
