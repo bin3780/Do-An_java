@@ -80,7 +80,7 @@ public class WorldState extends State
 
         
         bufferedImage = new BufferedImage(FrameGame.SCREEN_WIDTH, FrameGame.SCREEN_HEIGHT, BufferedImage.TYPE_INT_ARGB);
-        shinobi = new Shinobi(400, 400, this);
+        shinobi = new Shinobi(600, 1500, this);
         physicalMap = new PhyMap(0, 0, this);
         backgroundMap = new BGMap(0, 0, this);
         camera = new Cam(0, 50, FrameGame.SCREEN_WIDTH, FrameGame.SCREEN_HEIGHT, this);
