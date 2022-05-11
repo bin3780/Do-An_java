@@ -15,7 +15,7 @@ dick
 dick1 70000000 dick3 70000000 dick4 70000000 dick3 70000000 dick1 1500000000
 
 flyingup
-flyingup1 70000000 flyingup2 70000000 flyingup3 70000000 flyingup4 70000000 flyingup5 70000000
+flyingup1 70000000 flyingup2 70000000 flyingup3 70000000 flyingup4 70000000 flyingup3 70000000 flyingup5 700000
 
 flyingupshoot
 flyingupshoot1 200000000 flyingupshoot2 200000000 flyingupshoot3 200000000 flyingupshoot4 200000000 flyingupshoot5 20000000
@@ -40,7 +40,7 @@ gun_emplacement
 gun_emplacement1 100000000
 
 hurting
-hurting1 70000000 hurting2 70000000 hurting3 70000000 hurting4 70000000 hurting5 70000000 hurting6 70000000 hurting7 70000000 hurting8 70000000 hurting9 70000000 hurting10 70000000 hurting1 100000000
+hurting1 70000000
 
 clim_wall
 clim_wall 10000000
