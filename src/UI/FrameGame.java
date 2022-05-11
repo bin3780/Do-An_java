@@ -45,7 +45,10 @@ public class FrameGame extends JFrame
 
     public static void main(String arg[]){
 
-            FrameGame gameFrame = new FrameGame();
+
+
+
+        FrameGame gameFrame = new FrameGame();
             gameFrame.startGame();
 
     }

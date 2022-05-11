@@ -24,7 +24,7 @@ public class Shinobi extends Character{
     private AudioClip hurtingSound;
     private AudioClip shooting1;
     public Shinobi(float x, float y, WorldState gameWorld) {
-        super(x, y, 70, 90, 0.1f, 50, gameWorld);
+        super(x, y, 70, 90, 0.1f, 100, gameWorld);
         //TODO Auto-generated constructor stub
         shooting1 = Loader_CacheData.getInstance().getSound("bluefireshooting");
         hurtingSound = Loader_CacheData.getInstance().getSound("megamanhurt");
