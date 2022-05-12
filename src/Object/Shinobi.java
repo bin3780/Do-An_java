@@ -83,17 +83,17 @@ public class Shinobi extends Character{
         flyShootingBackAnim.flipAllImage();
 
         //// Thêm đánh kiếm
-        idleAttackForwardAnimation = Loader_CacheData.getInstance().getAnimation("idleatk");
-        idleAttackBackAnimation = Loader_CacheData.getInstance().getAnimation("idleatk");
-        idleAttackBackAnimation.flipAllImage();
+        // idleAttackForwardAnimation = Loader_CacheData.getInstance().getAnimation("idleatk");
+        // idleAttackBackAnimation = Loader_CacheData.getInstance().getAnimation("idleatk");
+        // idleAttackBackAnimation.flipAllImage();
 
-        runAttackFroAnimation =  Loader_CacheData.getInstance().getAnimation("idleatk");
-        runAttackBackAnimation =  Loader_CacheData.getInstance().getAnimation("idleatk");
-        runAttackBackAnimation.flipAllImage();
+        // runAttackFroAnimation =  Loader_CacheData.getInstance().getAnimation("idleatk");
+        // runAttackBackAnimation =  Loader_CacheData.getInstance().getAnimation("idleatk");
+        // runAttackBackAnimation.flipAllImage();
 
-        flyAttackForwardAnim = Loader_CacheData.getInstance().getAnimation("idleatk");
-        flyAttackBackAnim =  Loader_CacheData.getInstance().getAnimation("idleatk");
-        flyAttackBackAnim.flipAllImage();
+        // flyAttackForwardAnim = Loader_CacheData.getInstance().getAnimation("idleatk");
+        // flyAttackBackAnim =  Loader_CacheData.getInstance().getAnimation("idleatk");
+        // flyAttackBackAnim.flipAllImage();
     }
 
     @Override
