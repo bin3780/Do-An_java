@@ -220,13 +220,13 @@ public class WorldState extends State
                 
                 break;
             case MEETFINALBOSS:
-                yMid = FrameGame.SCREEN_HEIGHT/2 - 15;
-                y1 = yMid - FrameGame.SCREEN_HEIGHT/2 - openIntroGameY/2;
-                y2 = yMid + openIntroGameY/2;
+                // yMid = FrameGame.SCREEN_HEIGHT/2 - 15;
+                // y1 = yMid - FrameGame.SCREEN_HEIGHT/2 - openIntroGameY/2;
+                // y2 = yMid + openIntroGameY/2;
 
-                g2.setColor(Color.BLACK);
-                g2.fillRect(0, y1, FrameGame.SCREEN_WIDTH, FrameGame.SCREEN_HEIGHT/2);
-                g2.fillRect(0, y2, FrameGame.SCREEN_WIDTH, FrameGame.SCREEN_HEIGHT/2);
+                // g2.setColor(Color.BLACK);
+                // g2.fillRect(0, y1, FrameGame.SCREEN_WIDTH, FrameGame.SCREEN_HEIGHT/2);
+                // g2.fillRect(0, y2, FrameGame.SCREEN_WIDTH, FrameGame.SCREEN_HEIGHT/2);
                 break;
         }
     }
