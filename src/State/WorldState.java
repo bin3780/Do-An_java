@@ -80,7 +80,11 @@ public class WorldState extends State
 
         
         bufferedImage = new BufferedImage(FrameGame.SCREEN_WIDTH, FrameGame.SCREEN_HEIGHT, BufferedImage.TYPE_INT_ARGB);
-        shinobi = new Shinobi(600, 1500, this);
+        //shinobi = new Shinobi(600, 1500, this); //vi tri goc
+        
+        //shinobi = new Shinobi(2200, 900, this); //vi tri gate boss
+        shinobi = new Shinobi(2000, 900, this); //vi tri test intro boss
+        
         physicalMap = new PhyMap(0, 0, this);
         backgroundMap = new BGMap(0, 0, this);
         camera = new Cam(0, 50, FrameGame.SCREEN_WIDTH, FrameGame.SCREEN_HEIGHT, this);
@@ -149,7 +153,7 @@ public class WorldState extends State
                 
                 if(storyTutorial == 0){
                     if(openIntroGameY < 450) {
-                        openIntroGameY+=4;
+                        openIntroGameY+=50;
                     }else storyTutorial ++;
                     
                 }else{
@@ -212,21 +216,22 @@ public class WorldState extends State
                 if(storyTutorial >= 1){
                     g2.drawImage(avatar.getImage(), 600, 350, null);
                     g2.setColor(Color.white);
-                    g2.fillRect(150, 480, 450, 150);
-                    g2.setColor(Color.black);
+                    g2.fillRect(150, 450, 460, 100);
+                    
+                    g2.setColor(Color.BLACK);
                     String text = textTutorial.substring(0, currentSize - 1);
-                    drawString(g2, text, 160, 480);
+                    drawString(g2, text, 170, 490);
                 }
                 
                 break;
             case MEETFINALBOSS:
-                // yMid = FrameGame.SCREEN_HEIGHT/2 - 15;
-                // y1 = yMid - FrameGame.SCREEN_HEIGHT/2 - openIntroGameY/2;
-                // y2 = yMid + openIntroGameY/2;
+                yMid = FrameGame.SCREEN_HEIGHT/2 - 15;
+                y1 = yMid - FrameGame.SCREEN_HEIGHT/2 - openIntroGameY/2;
+                y2 = yMid + openIntroGameY/2;
 
-                // g2.setColor(Color.BLACK);
-                // g2.fillRect(0, y1, FrameGame.SCREEN_WIDTH, FrameGame.SCREEN_HEIGHT/2);
-                // g2.fillRect(0, y2, FrameGame.SCREEN_WIDTH, FrameGame.SCREEN_HEIGHT/2);
+                g2.setColor(Color.BLACK);
+                g2.fillRect(0, y1, FrameGame.SCREEN_WIDTH, FrameGame.SCREEN_HEIGHT/2);
+                g2.fillRect(0, y2, FrameGame.SCREEN_WIDTH, FrameGame.SCREEN_HEIGHT/2);
                 break;
         }
     }
@@ -251,13 +256,15 @@ public class WorldState extends State
                     g2.setColor(Color.BLACK);
                     g2.fillRect(0, 0, FrameGame.SCREEN_WIDTH, FrameGame.SCREEN_HEIGHT);
                     g2.setColor(Color.WHITE);
-                    g2.drawString("PRESS ENTER TO CONTINUE", 400, 300);
+                    g2.drawString("MAKE OTAKU SAVE THE WORLD!!", 400, 280);
+                    g2.drawString("Press enter to continue", 425, 300);
                     break;
                 case PAUSEGAME:
                     g2.setColor(Color.BLACK);
                     g2.fillRect(300, 260, 500, 70);
                     g2.setColor(Color.WHITE);
-                    g2.drawString("PRESS ENTER TO CONTINUE", 400, 300);
+                    g2.drawString("PAUSED", 520, 290);
+                    g2.drawString("Press enter to continue!", 485, 305);
                     break;
                 case TUTORIAL:
                     backgroundMap.draw(g2);
