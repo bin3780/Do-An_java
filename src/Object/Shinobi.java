@@ -10,15 +10,22 @@ import Anima.Animation;
 
 public class Shinobi extends Character{
 
-    private Animation runForwardAnim, runBackAnim, runShootingForwarAnim, runShootingBackAnim,runAttackFroAnimation,runAttackBackAnimation,flyShootingForwardAnim,flyShootingBackAnim;
-    private Animation idleForwardAnim, idleBackAnim, idleShootingForwardAnim, idleShootingBackAnim,idleAttackForwardAnimation,idleAttackBackAnimation;
+    private Animation runForwardAnim, runBackAnim,
+     runShootingForwarAnim, runShootingBackAnim,
+     runAttackFroAnimation,runAttackBackAnimation,
+    flyShootingForwardAnim,flyShootingBackAnim;
+    private Animation idleForwardAnim, idleBackAnim, 
+    idleShootingForwardAnim, idleShootingBackAnim,
+    idleAttackForwardAnimation,idleAttackBackAnimation;
     private Animation dickForwardAnim, dickBackAnim;
-    private Animation flyForwardAnim, flyBackAnim, flyAttackForwardAnim, flyAttackBackAnim;
+    private Animation flyForwardAnim, flyBackAnim, 
+    flyAttackForwardAnim, flyAttackBackAnim;
     private Animation landingForwardAnim, landingBackAnim;
     
     private Animation climWallForward, climWallBack;
     
     private long lastShootingTime;
+    private long lastAttakingTime;
     private boolean isShooting = false;
     
     private AudioClip hurtingSound;
@@ -74,6 +81,19 @@ public class Shinobi extends Character{
         flyShootingForwardAnim = Loader_CacheData.getInstance().getAnimation("flyingupshoot");
         flyShootingBackAnim = Loader_CacheData.getInstance().getAnimation("flyingupshoot");
         flyShootingBackAnim.flipAllImage();
+
+        //// Thêm đánh kiếm
+        idleAttackForwardAnimation = Loader_CacheData.getInstance().getAnimation("idleatk");
+        idleAttackBackAnimation = Loader_CacheData.getInstance().getAnimation("idleatk");
+        idleAttackBackAnimation.flipAllImage();
+
+        runAttackFroAnimation =  Loader_CacheData.getInstance().getAnimation("idleatk");
+        runAttackBackAnimation =  Loader_CacheData.getInstance().getAnimation("idleatk");
+        runAttackBackAnimation.flipAllImage();
+
+        flyAttackForwardAnim = Loader_CacheData.getInstance().getAnimation("idleatk");
+        flyAttackBackAnim =  Loader_CacheData.getInstance().getAnimation("idleatk");
+        flyAttackBackAnim.flipAllImage();
     }
 
     @Override
@@ -89,7 +109,7 @@ public class Shinobi extends Character{
         // TODO Auto-generated method stub
         if(!getIsJumping()){
             setIsJumping(true);
-            setSpeedY(-7.0f);           
+            setSpeedY(-9.0f);           
             flyBackAnim.reset();
             flyForwardAnim.reset();
         }
@@ -177,6 +197,41 @@ public class Shinobi extends Character{
             isShooting = true;
             
         }
+
+
+
+
+
+        // if(!isAttaking && !getIsDicking()){
+            
+        //     shooting1.play();
+            
+        //     Bokken bokken = new Bokken(getPosX(), getPosY(), getGameWorld());
+        //     if(getDirection() == LEFT_DIR) {
+        //         bokken.setSpeedX(-100);
+        //         bokken.setPosX(bokken.getPosX() - 15);
+        //         if(getSpeedX() != 0 && getSpeedY() == 0){
+        //             bokken.setPosX(bokken.getPosX() - 2);
+        //             bokken.setPosY(bokken.getPosY() - 1);
+        //         }
+        //     }else {
+        //         bokken.setSpeedX(100);
+        //         bokken.setPosX(bokken.getPosX() + 15);
+        //         if(getSpeedX() != 0 && getSpeedY() == 0){
+        //             bokken.setPosX(bokken.getPosX() + 2);
+        //             bokken.setPosY(bokken.getPosY() - 1);
+        //         }
+        //     }
+        //     if(getIsJumping())
+        //     bokken.setPosY(bokken.getPosY() - 20);
+            
+        //     bokken.setTeamType(getTeamType());
+        //     getGameWorld().bulletManager.addObject(bokken);
+            
+        //     lastAttakingTime = System.nanoTime();
+        //     isAttaking = true;
+            
+        // }
     }
     // @Override
     // public void hurtingCallback(){
