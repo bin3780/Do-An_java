@@ -320,19 +320,19 @@ public class WorldState extends State
                 camera.Update();
                 
                 
-                if(shinobi.getPosX() > finalBossX && finalbossTrigger){
-                    finalbossTrigger = false;
-                    switchState(TUTORIAL);
-                    tutorialState = MEETFINALBOSS;
-                    storyTutorial = 0;
-                    openIntroGameY = 550;
+                // if(shinobi.getPosX() > finalBossX && finalbossTrigger){
+                //     finalbossTrigger = false;
+                //     switchState(TUTORIAL);
+                //     tutorialState = MEETFINALBOSS;
+                //     storyTutorial = 0;
+                //     openIntroGameY = 550;
                     
-                    boss = new BossEnemy(finalBossX + 700, 460, this);
-                    boss.setTeamType(PartiObject.ENEMY_TEAM);
-                    boss.setDirection(PartiObject.LEFT_DIR);
-                    particularObjectManager.addObject(boss);
+                //     boss = new BossEnemy(finalBossX - 3400, 400, this);
+                //     boss.setTeamType(PartiObject.ENEMY_TEAM);
+                //     boss.setDirection(PartiObject.LEFT_DIR);
+                //     particularObjectManager.addObject(boss);
 
-                }
+                // }
                 
                 if(shinobi.getState() == PartiObject.DEATH){
                     numberOfLife --;
