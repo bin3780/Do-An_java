@@ -5,7 +5,6 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
-
 import Anima.FrameIMG;
 import Anima.Loader_CacheData;
 import Object.BGMap;
@@ -22,21 +21,17 @@ import UI.PanelGame;
 
 public class WorldState extends State
 {
-
     private BufferedImage bufferedImage;
     private int lastState;
-
     public ManagePartiObject particularObjectManager;
     public ManageBullet bulletManager;
-
-    public Shinobi shinobi;
-   
+    public Shinobi shinobi;   
     public PhyMap physicalMap;
     public BGMap backgroundMap;
     public Cam camera;
 
     public static final int finalBossX = 3600;
-    
+
     public static final int INIT_GAME = 0;
     public static final int TUTORIAL = 1;
     public static final int GAMEPLAY = 2;
@@ -68,8 +63,8 @@ public class WorldState extends State
     
     public AudioClip bgMusic;
     public WorldState(PanelGame gamePanel) {
+        // TODO Auto-generated method stub
         super(gamePanel);
-        //TODO Auto-generated constructor stub
         texts1[0] = "Nhân danh bin đẹp trai và hoàng đẹp gái \nFROM\n19DTHC3....";
         texts1[1] = "Chúng em sẽ giải cứu bạn Vũ Trung Nguyên 3Đ \n"
                 + "và sau đó sẽ giúp bạn ấy thẳng raaa....";
@@ -78,13 +73,13 @@ public class WorldState extends State
         texts1[3] = "      GÉT GÔOOOOOOOOOOO!.....";
         textTutorial = texts1[0];
 
-        
         bufferedImage = new BufferedImage(FrameGame.SCREEN_WIDTH, FrameGame.SCREEN_HEIGHT, BufferedImage.TYPE_INT_ARGB);
-        //shinobi = new Shinobi(600, 1500, this); //vi tri goc
         
+        shinobi = new Shinobi(600, 1500, this);
+        //shinobi = new Shinobi(2000, 900, this); //vi tri ben trai gate boss
         //shinobi = new Shinobi(2200, 900, this); //vi tri gate boss
-        shinobi = new Shinobi(2000, 900, this); //vi tri test intro boss
-        
+        //shinobi = new Shinobi(3200, 900, this); //vi tri boss  
+
         physicalMap = new PhyMap(0, 0, this);
         backgroundMap = new BGMap(0, 0, this);
         camera = new Cam(0, 50, FrameGame.SCREEN_WIDTH, FrameGame.SCREEN_HEIGHT, this);
@@ -94,52 +89,104 @@ public class WorldState extends State
         particularObjectManager.addObject(shinobi);
         
         initEnemies();
-
-        bgMusic = Loader_CacheData.getInstance().getSound("bgmusic");
-        
+        bgMusic = Loader_CacheData.getInstance().getSound("bgmusic");        
     }
 
-
-
-
     private void initEnemies(){
-        PartiObject redeye = new RedEyesEnemy(1250, 410, this);
+        //vi tri 1, quai mat dat
+        PartiObject redeye = new RedEyesEnemy(1500, 1300, this);
         redeye.setDirection(PartiObject.LEFT_DIR);
         redeye.setTeamType(PartiObject.ENEMY_TEAM);
         particularObjectManager.addObject(redeye);
-        
-        PartiObject smallRedGun = new RedEyesEnemy(1600, 180, this);
+              
+        //vi tri 2, quai mat dat
+        PartiObject smallRedGun = new RedEyesEnemy(2200, 1860, this);
         smallRedGun.setDirection(PartiObject.LEFT_DIR);
         smallRedGun.setTeamType(PartiObject.ENEMY_TEAM);
         particularObjectManager.addObject(smallRedGun);
-        
-        PartiObject smallRedGun2 = new RedEyesEnemy(2000, 200, this);
+
+        //vi tri 3, quai bay
+        PartiObject smallRedGun2 = new RedEyesEnemy(2900, 1800, this);
         smallRedGun2.setTeamType(PartiObject.ENEMY_TEAM);
-        particularObjectManager.addObject(smallRedGun2);
-        
-        
-        PartiObject redeye2 = new RedEyesEnemy(2500, 500, this);
+        particularObjectManager.addObject(smallRedGun2);   
+
+        //vi tri 4, quai mat dat
+        PartiObject redeye2 = new RedEyesEnemy(4400, 1900, this);
         redeye2.setDirection(PartiObject.LEFT_DIR);
         redeye2.setTeamType(PartiObject.ENEMY_TEAM);
         particularObjectManager.addObject(redeye2);
-        
-        PartiObject redeye3 = new RedEyesEnemy(3450, 500, this);
+
+        //vi tri 5, quai mat dat
+        PartiObject redeye3 = new RedEyesEnemy(5000, 1650, this);
         redeye3.setDirection(PartiObject.LEFT_DIR);
         redeye3.setTeamType(PartiObject.ENEMY_TEAM);
         particularObjectManager.addObject(redeye3);
-        
-        PartiObject redeye4 = new RedEyesEnemy(500, 1190, this);
+
+        //vi tri 6, quai bay
+        PartiObject redeye4 = new RedEyesEnemy(3700, 1200, this);
         redeye4.setDirection(PartiObject.RIGHT_DIR);
         redeye4.setTeamType(PartiObject.ENEMY_TEAM);
         particularObjectManager.addObject(redeye4);
+
+        //vi tri 7, quai bay
+        PartiObject redeye5 = new RedEyesEnemy(5100, 900, this);
+        redeye5.setDirection(PartiObject.RIGHT_DIR);
+        redeye5.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(redeye5);
+
+        //vi tri 8 quai mat dat 
+        PartiObject redeye6 = new RedEyesEnemy(3600, 450, this);
+        redeye6.setDirection(PartiObject.RIGHT_DIR);
+        redeye6.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(redeye6);
+
+        //vi tri 9
+        PartiObject redeye7 = new RedEyesEnemy(2750, 400, this);
+        redeye7.setDirection(PartiObject.RIGHT_DIR);
+        redeye7.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(redeye7);
+
+        //vi tri 10
+        PartiObject redeye8 = new RedEyesEnemy(1850, 400, this);
+        redeye8.setDirection(PartiObject.RIGHT_DIR);
+        redeye8.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(redeye8);
+
+        //vi tri 11
+        PartiObject redeye9 = new RedEyesEnemy(1000, 400, this);
+        redeye9.setDirection(PartiObject.RIGHT_DIR);
+        redeye9.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(redeye9); 
+
+        //vi tri 12, quai mat dat
+        PartiObject redeye10 = new RedEyesEnemy(1100, 1000, this);
+        redeye10.setDirection(PartiObject.RIGHT_DIR);
+        redeye10.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(redeye10);
+
+        //vi tri 13, quai mat dat
+        PartiObject redeye11 = new RedEyesEnemy(1800, 1000, this);
+        redeye11.setDirection(PartiObject.RIGHT_DIR);
+        redeye11.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(redeye11);
+
+        //vi tri 14, quai bay
+        PartiObject redeye12 = new RedEyesEnemy(1960, 760, this);
+        redeye12.setDirection(PartiObject.RIGHT_DIR);
+        redeye12.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(redeye12);
+
+
+        //shinobi = new Shinobi(2200, 900, this); //vi tri gate boss
+        //shinobi = new Shinobi(3200, 900, this); //vi tri boss      
         
         
         
-        
-        PartiObject smallRedGun3 = new RedEyesEnemy(1700, 980, this);
-        smallRedGun3.setDirection(PartiObject.LEFT_DIR);
-        smallRedGun3.setTeamType(PartiObject.ENEMY_TEAM);
-        particularObjectManager.addObject(smallRedGun3);
+        //quai gi day?
+        // PartiObject smallRedGun3 = new RedEyesEnemy(1700, 980, this);
+        // smallRedGun3.setDirection(PartiObject.LEFT_DIR);
+        // smallRedGun3.setTeamType(PartiObject.ENEMY_TEAM);
+        // particularObjectManager.addObject(smallRedGun3);
     }
 
     public void switchState(int state){
@@ -149,8 +196,7 @@ public class WorldState extends State
     
     private void TutorialUpdate(){
         switch(tutorialState){
-            case INTROGAME:
-                
+            case INTROGAME:                
                 if(storyTutorial == 0){
                     if(openIntroGameY < 450) {
                         openIntroGameY+=50;
@@ -161,6 +207,7 @@ public class WorldState extends State
                     if(currentSize < textTutorial.length()) currentSize++;
                 }
                 break;
+
             case MEETFINALBOSS:
                 if(storyTutorial == 0){
                     if(openIntroGameY >= 450) {
@@ -191,8 +238,7 @@ public class WorldState extends State
                         backgroundMap.map[15][120] = 17;
                         backgroundMap.map[16][120] = 17;
                         backgroundMap.map[17][120] = 17;
-                    }
-                    
+                    }                    
                 }else{
                 
                     if(currentSize < textTutorial.length()) currentSize++;
@@ -242,12 +288,10 @@ public class WorldState extends State
         Graphics2D g2 = (Graphics2D) bufferedImage.getGraphics();
 
         if(g2!=null){
-
             // NOTE: two lines below make the error splash white screen....
             // need to remove this line
             //g2.setColor(Color.WHITE);
-            //g2.fillRect(0, 0, GameFrame.SCREEN_WIDTH, GameFrame.SCREEN_HEIGHT);
-            
+            //g2.fillRect(0, 0, GameFrame.SCREEN_WIDTH, GameFrame.SCREEN_HEIGHT);           
             
             //physicalMap.draw(g2);
             
@@ -301,10 +345,7 @@ public class WorldState extends State
                     g2.setColor(Color.WHITE);
                     g2.drawString("GAME OVER!", 450, 300);
                     break;
-
-            }
-            
-
+            }           
         }
     }
 
@@ -324,8 +365,7 @@ public class WorldState extends State
                 bulletManager.UpdateObjects();
         
                 physicalMap.Update();
-                camera.Update();
-                
+                camera.Update();                
                 
                 // if(shinobi.getPosX() > finalBossX && finalbossTrigger){
                 //     finalbossTrigger = false;
@@ -361,7 +401,7 @@ public class WorldState extends State
                 
                 break;
             case GAMEWIN:
-                
+
                 break;
         }
     }

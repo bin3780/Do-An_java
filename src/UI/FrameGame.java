@@ -33,23 +33,15 @@ public class FrameGame extends JFrame
         gamePanel = new PanelGame();
         addKeyListener(gamePanel);
         add(gamePanel);
-
     }
 
     public void startGame(){
-
             gamePanel.startGame();
             this.setVisible(true);
-
     }
 
     public static void main(String arg[]){
-
-
-
-
         FrameGame gameFrame = new FrameGame();
             gameFrame.startGame();
-
     }
 }
