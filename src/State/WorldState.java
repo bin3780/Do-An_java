@@ -378,15 +378,14 @@ public class WorldState extends State
         switch(code){
             
             case KeyEvent.VK_DOWN:
-            shinobi.dick();
                 break;
                 
-            case KeyEvent.VK_RIGHT:
+            case KeyEvent.VK_D:
             shinobi.setDirection(shinobi.RIGHT_DIR);
             shinobi.run();
                 break;
                 
-            case KeyEvent.VK_LEFT:
+            case KeyEvent.VK_A :
             shinobi.setDirection(shinobi.LEFT_DIR);
             shinobi.run();
                 break;
@@ -419,9 +418,11 @@ public class WorldState extends State
                 shinobi.jump();
                 break;
                 
-            case KeyEvent.VK_A:
+            case KeyEvent.VK_M:
                 shinobi.attack();
                 break;
+            case KeyEvent.VK_N :
+                shinobi.attack2();
                 
         }
     }
@@ -439,12 +440,12 @@ public class WorldState extends State
             shinobi.standUp();
                 break;
                 
-            case KeyEvent.VK_RIGHT:
+            case KeyEvent.VK_D:
                 if(shinobi.getSpeedX() > 0)
                 shinobi.stopRun();
                 break;
                 
-            case KeyEvent.VK_LEFT:
+            case KeyEvent.VK_A:
                 if(shinobi.getSpeedX() < 0)
                 shinobi.stopRun();
                 break;
@@ -461,7 +462,7 @@ public class WorldState extends State
                 
                 break;
                 
-            case KeyEvent.VK_A:
+            case KeyEvent.VK_M:
                 
                 break;
             case KeyEvent.VK_ESCAPE:

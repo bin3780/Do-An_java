@@ -21,7 +21,7 @@ public class Shinobi extends Character{
     private Animation flyForwardAnim, flyBackAnim, 
     flyAttackForwardAnim, flyAttackBackAnim;
     private Animation landingForwardAnim, landingBackAnim;
-    
+    private Animation idleShooting2ForwardAnim,idleShooting2BackAnim,runShooting2ForwardAnim,runShooting2BackAnim;
     private Animation climWallForward, climWallBack;
     
     private long lastShootingTime;
@@ -73,6 +73,10 @@ public class Shinobi extends Character{
         idleShootingForwardAnim = Loader_CacheData.getInstance().getAnimation("idleshoot");
         idleShootingBackAnim = Loader_CacheData.getInstance().getAnimation("idleshoot");
         idleShootingBackAnim.flipAllImage();
+
+        // idleShooting2ForwardAnim = Loader_CacheData.getInstance().getAnimation("dragonshoot");
+        // idleShooting2BackAnim = Loader_CacheData.getInstance().getAnimation("dragonshoot");
+        // idleShooting2BackAnim.flipAllImage();
         
         runShootingForwarAnim = Loader_CacheData.getInstance().getAnimation("runshoot");
         runShootingBackAnim = Loader_CacheData.getInstance().getAnimation("runshoot");
@@ -197,47 +201,42 @@ public class Shinobi extends Character{
             isShooting = true;
             
         }
-
-
-
-
-
-        // if(!isAttaking && !getIsDicking()){
-            
-        //     shooting1.play();
-            
-        //     Bokken bokken = new Bokken(getPosX(), getPosY(), getGameWorld());
-        //     if(getDirection() == LEFT_DIR) {
-        //         bokken.setSpeedX(-100);
-        //         bokken.setPosX(bokken.getPosX() - 15);
-        //         if(getSpeedX() != 0 && getSpeedY() == 0){
-        //             bokken.setPosX(bokken.getPosX() - 2);
-        //             bokken.setPosY(bokken.getPosY() - 1);
-        //         }
-        //     }else {
-        //         bokken.setSpeedX(100);
-        //         bokken.setPosX(bokken.getPosX() + 15);
-        //         if(getSpeedX() != 0 && getSpeedY() == 0){
-        //             bokken.setPosX(bokken.getPosX() + 2);
-        //             bokken.setPosY(bokken.getPosY() - 1);
-        //         }
-        //     }
-        //     if(getIsJumping())
-        //     bokken.setPosY(bokken.getPosY() - 20);
-            
-        //     bokken.setTeamType(getTeamType());
-        //     getGameWorld().bulletManager.addObject(bokken);
-            
-        //     lastAttakingTime = System.nanoTime();
-        //     isAttaking = true;
-            
-        // }
     }
-    // @Override
-    // public void hurtingCallback(){
-    //     System.out.println("Call back hurting");
-    //     hurtingSound.play();
-    // }
+        public void attack2() 
+        {
+        // TODO Auto-generated method stub
+        if(!isShooting && !getIsDicking()){
+            
+            shooting1.play();
+            
+            Bullet bullet = new DragoShoot(getPosX(), getPosY(), getGameWorld());
+            if(getDirection() == LEFT_DIR) {
+                bullet.setSpeedX(-10);
+                bullet.setPosX(bullet.getPosX() - 40);
+                if(getSpeedX() != 0 && getSpeedY() == 0){
+                    bullet.setPosX(bullet.getPosX() - 10);
+                    bullet.setPosY(bullet.getPosY() - 5);
+                }
+            }else {
+                bullet.setSpeedX(10);
+                bullet.setPosX(bullet.getPosX() + 40);
+                if(getSpeedX() != 0 && getSpeedY() == 0){
+                    bullet.setPosX(bullet.getPosX() + 10);
+                    bullet.setPosY(bullet.getPosY() - 5);
+                }
+            }
+            if(getIsJumping())
+                bullet.setPosY(bullet.getPosY() - 20);
+            
+            bullet.setTeamType(getTeamType());
+            getGameWorld().bulletManager.addObject(bullet);
+            
+            lastShootingTime = System.nanoTime();
+            isShooting = true;
+            
+        }
+    }
+
 
     @Override
     public Rectangle getBoundForCollisionWithEnemy() {

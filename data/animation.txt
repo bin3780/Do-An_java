@@ -1,4 +1,8 @@
-27
+28
+
+dragonshoot
+dragonshoot1 70000000 dragonshoot2 70000000 dragonshoot3 70000000 dragonshoot4 70000000 dragonshoot5 70000000 dragonshoot1 70000000 
+
 idle
 idle1 70000000 idle2 70000000 idle3 70000000 idle2 70000000 idle1 1500000000
 

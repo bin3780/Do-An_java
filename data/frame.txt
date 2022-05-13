@@ -1,5 +1,40 @@
 
-149
+154
+
+dragonshoot1
+image data/AssetGameJV2d.png
+x 622
+y 691
+w 220
+h 90
+
+dragonshoot2
+image data/AssetGameJV2d.png
+x 833
+y 691
+w 220
+h 90
+
+dragonshoot3
+image data/AssetGameJV2d.png
+x 1046
+y 691
+w 220
+h 90
+
+dragonshoot4
+image data/AssetGameJV2d.png
+x 622
+y 810
+w 220
+h 90
+
+dragonshoot5
+image data/AssetGameJV2d.png
+x 862
+y 810
+w 255
+h 100
 
 idle1
 image data/AssetGameJV2d.png
