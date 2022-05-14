@@ -296,10 +296,12 @@ public class WorldState extends State {
                     g2.setColor(Color.GRAY);
                     g2.fillRect(19, 59, 102, 22);
                     g2.setColor(Color.red);
-                    g2.fillRect(20, 60, shinobi.getBlood(), 20);
-
+                    g2.fillRect(160, 20, ((int)(shinobi.getBlood()*2.5)), 30);
+                    
+                    g2.drawImage(Loader_CacheData.getInstance().getFrameImage("uihp").getImage(), 0,0,
+                                null);
                     for (int i = 0; i < numberOfLife; i++) {
-                        g2.drawImage(Loader_CacheData.getInstance().getFrameImage("hearth").getImage(), 20 + i * 40, 18,
+                        g2.drawImage(Loader_CacheData.getInstance().getFrameImage("hearth").getImage(), 180 + i * 40, 70,
                                 null);
                     }
 

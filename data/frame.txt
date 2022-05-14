@@ -1,6 +1,13 @@
 
 151
 
+uihp
+image data/AssetGameDoAnJV/ui_HP/topbar.png
+x 0
+y 0
+w 425
+h 136
+
 dragonshoot1
 image data/AssetGameJV2d.png
 x 622
