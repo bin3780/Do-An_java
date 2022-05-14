@@ -17,7 +17,7 @@ public class FrameGame extends JFrame
 
     public FrameGame(){
 
-        super("Mega Man java game");
+        super("Shinobi_PQH_VTN_LXH");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Toolkit toolkit = this.getToolkit();
         Dimension solution = toolkit.getScreenSize();
@@ -33,23 +33,15 @@ public class FrameGame extends JFrame
         gamePanel = new PanelGame();
         addKeyListener(gamePanel);
         add(gamePanel);
-
     }
 
     public void startGame(){
-
             gamePanel.startGame();
             this.setVisible(true);
-
     }
 
     public static void main(String arg[]){
-
-
-
-
         FrameGame gameFrame = new FrameGame();
             gameFrame.startGame();
-
     }
 }

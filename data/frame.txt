@@ -1,5 +1,40 @@
 
-149
+151
+
+dragonshoot1
+image data/AssetGameJV2d.png
+x 622
+y 691
+w 220
+h 90
+
+dragonshoot2
+image data/AssetGameJV2d.png
+x 833
+y 691
+w 220
+h 90
+
+dragonshoot3
+image data/AssetGameJV2d.png
+x 1046
+y 691
+w 220
+h 90
+
+dragonshoot4
+image data/AssetGameJV2d.png
+x 622
+y 810
+w 220
+h 90
+
+dragonshoot5
+image data/AssetGameJV2d.png
+x 862
+y 810
+w 255
+h 100
 
 idle1
 image data/AssetGameJV2d.png
@@ -839,18 +874,25 @@ h 110
 
 
 redeye1
-image data/enemysprite2.png
-x 5
-y 11
-w 135
-h 89
+image data/Asset_Bakemono.png
+x 1240
+y 420
+w 115
+h 160
 
 redeye2
-image data/enemysprite2.png
-x 141
-y 11
-w 135
-h 89
+image data/Asset_Bakemono.png
+x 1385
+y 420
+w 115
+h 160
+
+redeye3
+image data/Asset_Bakemono.png
+x 1540
+y 420
+w 115
+h 160
 
 
 avatar
@@ -870,25 +912,25 @@ h 39
 
 
 darkraise1
-image data/enemysprite1.png
-x 2
-y 670
-w 127
-h 80
+image data/Asset_Bakemono.png
+x 1615
+y 600
+w 175
+h 120
 
 darkraise2
-image data/enemysprite1.png
-x 134
-y 675
-w 121
-h 80
+image data/Asset_Bakemono.png
+x 1384
+y 600
+w 175
+h 120
 
 darkraise3
-image data/enemysprite1.png
-x 265
-y 681
-w 110
-h 80
+image data/Asset_Bakemono.png
+x 1170
+y 600
+w 175
+h 120
 
 
 
@@ -972,103 +1014,76 @@ h 114
 
 
 rocketUp1
-image data/enemysprite2.png
-x 24
-y 146
-w 33
-h 33
+image data/Asset_Bakemono.png
+x 1540
+y 30
+w 60
+h 60
 
 rocket1
-image data/enemysprite2.png
-x 24
-y 189
-w 33
-h 26
+image data/Asset_Bakemono.png
+x 1390
+y 30
+w 50
+h 60
 
 rocketDown1
-image data/enemysprite2.png
-x 24
-y 223
-w 33
-h 33
+image data/Asset_Bakemono.png
+x 1620
+y 30
+w 60
+h 60
 
 
 boss_idle1
-image data/enemysprite2.png
-x 290
-y 100
-w 105
-h 163
+image data/Asset_Bakemono.png
+x 10
+y 0
+w 130
+h 185
 
 boss_idle2
-image data/enemysprite2.png
-x 405
-y 100
-w 105
-h 163
+image data/Asset_Bakemono.png
+x 170
+y 0
+w 180
+h 185
 
 boss_idle3
-image data/enemysprite2.png
-x 518
-y 100
-w 110
-h 163
+image data/Asset_Bakemono.png
+x 375
+y 0
+w 210
+h 185
 
 boss_idle4
-image data/enemysprite2.png
-x 637
-y 100
-w 115
-h 163
+image data/Asset_Bakemono.png
+x 620
+y 0
+w 260
+h 185
 
-boss_idle5
-image data/enemysprite2.png
-x 766
-y 100
-w 120
-h 163
 
 boss_shooting1
-image data/enemysprite2.png
-x 730
-y 748
-w 150
-h 180
+image data/Asset_Bakemono.png
+x 10
+y 0
+w 130
+h 185
 
 boss_shooting2
-image data/enemysprite2.png
-x 889
-y 748
-w 150
-h 180
+image data/Asset_Bakemono.png
+x 170
+y 0
+w 180
+h 185
 
 boss_slide1
-image data/enemysprite2.png
-x 220
-y 660
-w 166
-h 67
-
-boss_slide2
-image data/enemysprite2.png
-x 396
-y 660
-w 166
-h 67
-
-boss_slide3
-image data/enemysprite2.png
-x 566
-y 660
-w 166
-h 67
-
-boss_slide4
-image data/enemysprite2.png
-x 736
-y 660
-w 166
-h 67
+image data/Asset_Bakemono.png
+x 900
+y 30
+w 420
+h 160
 
 hearth
 image data/megasprite.png
@@ -1080,6 +1095,6 @@ h 30
 gamewin
 image data/textgame.png
 x 80
-y 60
-w 440
-h 60
+y 104
+w 458
+h 146

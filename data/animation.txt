@@ -1,4 +1,8 @@
-27
+28
+
+dragonshoot
+dragonshoot1 70000000 dragonshoot2 70000000 dragonshoot3 70000000 dragonshoot4 70000000 dragonshoot5 70000000 dragonshoot1 70000000 
+
 idle
 idle1 70000000 idle2 70000000 idle3 70000000 idle2 70000000 idle1 1500000000
 
@@ -46,7 +50,7 @@ clim_wall
 clim_wall 10000000
 
 redeye
-redeye1 170000000 redeye2 170000000
+redeye1 170000000 redeye2 170000000 redeye3 170000000
 
 smallredgun
 smallredgun1 170000000
@@ -73,10 +77,10 @@ rocket
 rocket1 70000000
 
 boss_idle
-boss_idle1 500000000 boss_idle2 130000000 boss_idle3 130000000 boss_idle4 130000000 boss_idle5 130000000 boss_idle4 130000000 boss_idle3 130000000 boss_idle2 130000000
+boss_idle1 500000000 boss_idle2 130000000 boss_idle3 130000000 boss_idle4 130000000 boss_idle4 130000000 boss_idle3 130000000 boss_idle2 130000000
 
 boss_shooting
 boss_shooting1 500000000 boss_shooting2 500000000
 
 boss_slide
-boss_slide1 500000000 boss_slide2 500000000 boss_slide3 500000000 boss_slide4 500000000 
+boss_slide1 1000000000
