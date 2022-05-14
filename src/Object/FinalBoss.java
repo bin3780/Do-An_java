@@ -7,7 +7,7 @@ import State.WorldState;
 import Anima.Animation;
 import Anima.Loader_CacheData;
 
-public class FinalBoss extends Human {
+public class FinalBoss extends Character {
 
     private Animation idleforward, idleback;
     private Animation shootingforward, shootingback;

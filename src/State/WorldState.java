@@ -80,10 +80,11 @@ public class WorldState extends State {
         textTutorial = texts1[0];
 
         bufferedImage = new BufferedImage(FrameGame.SCREEN_WIDTH, FrameGame.SCREEN_HEIGHT, BufferedImage.TYPE_INT_ARGB);
-        // shinobi = new Shinobi(600, 1500, this); //vi tri goc
+        //shinobi = new Shinobi(600, 1500, this); //vi tri goc
+        shinobi = new Shinobi(1800, 900, this); 
 
         // shinobi = new Shinobi(2200, 900, this); //vi tri gate boss
-        shinobi = new Shinobi(2000, 900, this); // vi tri test intro boss
+       // shinobi = new Shinobi(2000, 900, this); // vi tri test intro boss
 
         physicalMap = new PhyMap(0, 0, this);
         backgroundMap = new BGMap(0, 0, this);
@@ -100,56 +101,83 @@ public class WorldState extends State {
     }
 
     private void initEnemies() {
-
-        PartiObject robotR = new RobotR(2500, 500, this);
-        robotR.setTeamType(PartiObject.ENEMY_TEAM);
-        particularObjectManager.addObject(robotR);
-
-        PartiObject robotR2 = new RobotR(3450, 500, this);
-        robotR2.setTeamType(PartiObject.ENEMY_TEAM);
-        particularObjectManager.addObject(robotR2);
-
-        PartiObject DarkRaide = new DarkRaise(2500, 500, this);
-        robotR2.setTeamType(PartiObject.ENEMY_TEAM);
-        particularObjectManager.addObject(DarkRaide);
-
-        PartiObject DarkRaide2 = new DarkRaise(3450, 500, this);
-        robotR2.setTeamType(PartiObject.ENEMY_TEAM);
-        particularObjectManager.addObject(DarkRaide2);
-
-        PartiObject redeye = new RedEyesEnemy(1250, 410, this);
-        redeye.setDirection(PartiObject.LEFT_DIR);
-        redeye.setTeamType(PartiObject.ENEMY_TEAM);
-        particularObjectManager.addObject(redeye);
-
-        PartiObject smallRedGun = new RedEyesEnemy(1600, 180, this);
-        smallRedGun.setDirection(PartiObject.LEFT_DIR);
-        smallRedGun.setTeamType(PartiObject.ENEMY_TEAM);
-        particularObjectManager.addObject(smallRedGun);
-
-        PartiObject smallRedGun2 = new RedEyesEnemy(2000, 200, this);
-        smallRedGun2.setTeamType(PartiObject.ENEMY_TEAM);
-        particularObjectManager.addObject(smallRedGun2);
-
-        PartiObject redeye2 = new RedEyesEnemy(2500, 500, this);
-        redeye2.setDirection(PartiObject.LEFT_DIR);
-        redeye2.setTeamType(PartiObject.ENEMY_TEAM);
-        particularObjectManager.addObject(redeye2);
-
-        PartiObject redeye3 = new RedEyesEnemy(3450, 500, this);
-        redeye3.setDirection(PartiObject.LEFT_DIR);
-        redeye3.setTeamType(PartiObject.ENEMY_TEAM);
-        particularObjectManager.addObject(redeye3);
-
-        PartiObject redeye4 = new RedEyesEnemy(500, 1190, this);
-        redeye4.setDirection(PartiObject.RIGHT_DIR);
-        redeye4.setTeamType(PartiObject.ENEMY_TEAM);
-        particularObjectManager.addObject(redeye4);
-
-        PartiObject smallRedGun3 = new RedEyesEnemy(1700, 980, this);
-        smallRedGun3.setDirection(PartiObject.LEFT_DIR);
-        smallRedGun3.setTeamType(PartiObject.ENEMY_TEAM);
-        particularObjectManager.addObject(smallRedGun3);
+        //1
+        PartiObject Robot1 = new RobotR(1500, 1300, this);
+        //Robot1.setDirection(PartiObject.RIGHT_DIR);
+        Robot1.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(Robot1);
+        //2
+        PartiObject Robot2 = new RobotR(2200, 1920, this);
+        Robot2.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(Robot2);
+        //3
+        PartiObject RedBat1 = new DarkRaise(2700, 1760, this);
+        RedBat1.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(RedBat1);
+        //4
+        PartiObject Death1 = new RedEyesEnemy(3200, 1760, this);
+        Death1.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(Death1);
+        //5
+        PartiObject Robot3 = new RobotR(3800, 1760, this);
+        Robot3.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(Robot3);
+        //6
+        PartiObject RedBat2 = new DarkRaise(3500, 1650, this);
+        RedBat2.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(RedBat2);
+        //7
+        PartiObject Death2 = new RedEyesEnemy(4400, 1950, this);
+        Death2.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(Death2);
+        //8
+        PartiObject RedBat3 = new DarkRaise(5000, 1650, this);
+        RedBat3.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(RedBat3);
+        //9
+        PartiObject Death3 = new RedEyesEnemy(4900, 1450, this);
+        Death3.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(Death3);
+        //10
+        PartiObject RedBat4 = new DarkRaise(4100, 1280, this);
+        RedBat4.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(RedBat4);
+        //11
+        PartiObject RedBat5 = new DarkRaise(4970, 1200, this);
+        RedBat5.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(RedBat5);
+        //12
+        PartiObject Death4 = new RedEyesEnemy(5100, 900, this);
+        Death4.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(Death4);
+        //13
+        PartiObject Death5 = new RedEyesEnemy(3600, 460, this);
+        Death5.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(Death5);
+        //14
+        PartiObject Death6 = new RedEyesEnemy(2750, 460, this);
+        Death6.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(Death6);
+        //15
+        PartiObject Robot4 = new RobotR(1800, 460, this);
+        Robot4.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(Robot4);
+        //16
+        PartiObject Death7 = new RedEyesEnemy(1000, 460, this);
+        Death7.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(Death7); 
+        //17
+        PartiObject RedBat6 = new DarkRaise(1000, 900, this);
+        RedBat6.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(RedBat6);
+        //18
+        PartiObject RedBat7 = new DarkRaise(1600, 750, this);
+        RedBat7.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(RedBat7);
+        //19
+        PartiObject Robot5 = new RobotR(1750, 950, this);
+        Robot5.setTeamType(PartiObject.ENEMY_TEAM);
+        particularObjectManager.addObject(Robot5);
     }
 
     public void switchState(int state) {
@@ -340,20 +368,22 @@ public class WorldState extends State {
 
                 physicalMap.Update();
                 camera.Update();
+        // shinobi = new Shinobi(2200, 900, this); //vi tri gate boss
+       // shinobi = new Shinobi(2000, 900, this); // vi tri test intro boss
+                if(shinobi.getPosX() > finalBossX && finalbossTrigger){
+                finalbossTrigger = false;
+                switchState(TUTORIAL);
+                tutorialState = MEETFINALBOSS;
+                storyTutorial = 0;
+                openIntroGameY = 550;
 
-                // if(shinobi.getPosX() > finalBossX && finalbossTrigger){
-                // finalbossTrigger = false;
-                // switchState(TUTORIAL);
-                // tutorialState = MEETFINALBOSS;
-                // storyTutorial = 0;
-                // openIntroGameY = 550;
+                //boss = new BossEnemy(finalBossX - 3400, 400, this);
+                boss = new BossEnemy(finalBossX - 2000, 400, this);
+                boss.setTeamType(PartiObject.ENEMY_TEAM);
+                boss.setDirection(PartiObject.LEFT_DIR);
+                particularObjectManager.addObject(boss);
 
-                // boss = new BossEnemy(finalBossX - 3400, 400, this);
-                // boss.setTeamType(PartiObject.ENEMY_TEAM);
-                // boss.setDirection(PartiObject.LEFT_DIR);
-                // particularObjectManager.addObject(boss);
-
-                // }
+                }
 
                 if (shinobi.getState() == PartiObject.DEATH) {
                     numberOfLife--;
