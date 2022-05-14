@@ -104,8 +104,8 @@ public class Shinobi extends Character{
     public void run() {
         // TODO Auto-generated method stub
         if(getDirection() == LEFT_DIR)
-        setSpeedX(-6);
-    else setSpeedX(6);
+        setSpeedX(-4);
+    else setSpeedX(4);
     }
 
     @Override
