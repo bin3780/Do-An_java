@@ -36,7 +36,7 @@ public class WorldState extends State {
     public BGMap backgroundMap;
     public Cam camera;
 
-    public static final int finalBossX = 3600;
+    public static final int finalBossX = 2000;
 
     public static final int INIT_GAME = 0;
     public static final int TUTORIAL = 1;
@@ -61,6 +61,7 @@ public class WorldState extends State {
 
     private boolean finalbossTrigger = true;
     PartiObject boss;
+    PartiObject boss2;
 
     FrameIMG avatar = Loader_CacheData.getInstance().getFrameImage("avatar");
 
@@ -178,6 +179,16 @@ public class WorldState extends State {
         PartiObject Robot5 = new RobotR(1750, 950, this);
         Robot5.setTeamType(PartiObject.ENEMY_TEAM);
         particularObjectManager.addObject(Robot5);
+        ///
+        boss = new BossEnemy(1500, 500, this);
+        boss.setTeamType(PartiObject.ENEMY_TEAM);
+        boss.setDirection(PartiObject.LEFT_DIR);
+        particularObjectManager.addObject(boss);
+
+        boss2 = new FinalBoss(2500, 500, this);
+        boss2.setTeamType(PartiObject.ENEMY_TEAM);
+        boss2.setDirection(PartiObject.LEFT_DIR);
+        particularObjectManager.addObject(boss2);
     }
 
     public void switchState(int state) {
@@ -370,20 +381,16 @@ public class WorldState extends State {
                 camera.Update();
         // shinobi = new Shinobi(2200, 900, this); //vi tri gate boss
        // shinobi = new Shinobi(2000, 900, this); // vi tri test intro boss
-                if(shinobi.getPosX() > finalBossX && finalbossTrigger){
-                finalbossTrigger = false;
-                switchState(TUTORIAL);
-                tutorialState = MEETFINALBOSS;
-                storyTutorial = 0;
-                openIntroGameY = 550;
+                // if(shinobi.getPosX() > finalBossX ){
+                // switchState(TUTORIAL);
+                // tutorialState = MEETFINALBOSS;
+                // storyTutorial = 0;
+                // openIntroGameY = 550;
 
-                //boss = new BossEnemy(finalBossX - 3400, 400, this);
-                boss = new BossEnemy(finalBossX - 2000, 400, this);
-                boss.setTeamType(PartiObject.ENEMY_TEAM);
-                boss.setDirection(PartiObject.LEFT_DIR);
-                particularObjectManager.addObject(boss);
+                // //boss = new BossEnemy(finalBossX - 3400, 400, this);
+               
 
-                }
+                // }
 
                 if (shinobi.getState() == PartiObject.DEATH) {
                     numberOfLife--;
@@ -397,8 +404,8 @@ public class WorldState extends State {
                         bgMusic.stop();
                     }
                 }
-                if (!finalbossTrigger && boss.getState() == PartiObject.DEATH)
-                    switchState(GAMEWIN);
+                if ( boss.getState() == PartiObject.DEATH && boss2.getState() == PartiObject.DEATH)
+                    switchState(GAMEWIN);   
 
                 break;
             case GAMEOVER:
