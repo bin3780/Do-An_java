@@ -1,5 +1,5 @@
 
-151
+152
 
 uihp
 image data/AssetGameDoAnJV/ui_HP/topbar.png
@@ -1047,28 +1047,28 @@ image data/Asset_Bakemono.png
 x 10
 y 0
 w 130
-h 185
+h 200
 
 boss_idle2
 image data/Asset_Bakemono.png
 x 170
 y 0
 w 180
-h 185
+h 200
 
 boss_idle3
 image data/Asset_Bakemono.png
 x 375
 y 0
 w 210
-h 185
+h 200
 
 boss_idle4
 image data/Asset_Bakemono.png
 x 620
 y 0
 w 260
-h 185
+h 200
 
 
 boss_shooting1
@@ -1076,14 +1076,14 @@ image data/Asset_Bakemono.png
 x 10
 y 0
 w 130
-h 185
+h 200
 
 boss_shooting2
 image data/Asset_Bakemono.png
 x 170
 y 0
 w 180
-h 185
+h 200
 
 boss_slide1
 image data/Asset_Bakemono.png
@@ -1099,7 +1099,14 @@ y 1388
 w 30
 h 30
 
-gamewin
+gamewin1
+image data/textgame.png
+x 80
+y 104
+w 458
+h 146
+
+gamewin2
 image data/textgame.png
 x 80
 y 104

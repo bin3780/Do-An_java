@@ -343,9 +343,9 @@ public class WorldState extends State {
                         g2.drawImage(Loader_CacheData.getInstance().getFrameImage("hearth").getImage(), 180 + i * 40, 70,
                                 null);
                     }
-
+                    
                     if (state == GAMEWIN) {
-                        g2.drawImage(Loader_CacheData.getInstance().getFrameImage("gamewin").getImage(), 300, 300,
+                        g2.drawImage(Loader_CacheData.getInstance().getFrameImage("gamewin1").getImage(), 200, 200,
                                 null);
                     }
 

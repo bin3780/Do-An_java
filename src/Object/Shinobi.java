@@ -104,8 +104,8 @@ public class Shinobi extends Character{
     public void run() {
         // TODO Auto-generated method stub
         if(getDirection() == LEFT_DIR)
-        setSpeedX(-4);
-    else setSpeedX(4);
+        setSpeedX(-6);
+    else setSpeedX(6);
     }
 
     @Override
@@ -113,7 +113,7 @@ public class Shinobi extends Character{
         // TODO Auto-generated method stub
         if(!getIsJumping()){
             setIsJumping(true);
-            setSpeedY(-7.0f);           
+            setSpeedY(-8.0f);           
             flyBackAnim.reset();
             flyForwardAnim.reset();
         }
