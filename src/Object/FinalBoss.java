@@ -30,9 +30,9 @@ public class FinalBoss extends Character {
         shootingforward = Loader_CacheData.getInstance().getAnimation("boss_shooting");
         shootingforward.flipAllImage();
 
-        slideback = Loader_CacheData.getInstance().getAnimation("boss_slide");
         slideforward = Loader_CacheData.getInstance().getAnimation("boss_slide");
-        slideforward.flipAllImage();
+        slideback = Loader_CacheData.getInstance().getAnimation("boss_slide");
+        slideback.flipAllImage();
 
         setTimeForNoBehurt(500 * 1000000);
         setDamage(10);

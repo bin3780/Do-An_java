@@ -32,7 +32,6 @@ public class PanelGame extends JPanel implements Runnable,KeyListener{
             gameThread = new Thread(this);
             gameThread.start();
         }
-        int a = 0;
         @Override
         public void run() {
     
@@ -40,7 +39,7 @@ public class PanelGame extends JPanel implements Runnable,KeyListener{
             long currentTime;
             long sleepTime;
     
-            long period = 1000000000/80;
+            long period = 1000000000/59;
     
             while(isRunning){
     

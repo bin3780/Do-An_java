@@ -81,8 +81,8 @@ public class WorldState extends State {
         textTutorial = texts1[0];
 
         bufferedImage = new BufferedImage(FrameGame.SCREEN_WIDTH, FrameGame.SCREEN_HEIGHT, BufferedImage.TYPE_INT_ARGB);
-        //shinobi = new Shinobi(600, 1500, this); //vi tri goc
-        shinobi = new Shinobi(1800, 900, this); 
+        shinobi = new Shinobi(600, 1500, this); //vi tri goc
+        //shinobi = new Shinobi(1800, 900, this);  //test
 
         // shinobi = new Shinobi(2200, 900, this); //vi tri gate boss
        // shinobi = new Shinobi(2000, 900, this); // vi tri test intro boss
@@ -139,6 +139,11 @@ public class WorldState extends State {
         PartiObject Death3 = new RedEyesEnemy(4900, 1450, this);
         Death3.setTeamType(PartiObject.ENEMY_TEAM);
         particularObjectManager.addObject(Death3);
+         //boss 1
+         boss = new BossEnemy(5100, 1400, this);
+         boss.setTeamType(PartiObject.ENEMY_TEAM);
+         boss.setDirection(PartiObject.LEFT_DIR);
+         particularObjectManager.addObject(boss);
         //10
         PartiObject RedBat4 = new DarkRaise(4100, 1280, this);
         RedBat4.setTeamType(PartiObject.ENEMY_TEAM);
@@ -179,13 +184,9 @@ public class WorldState extends State {
         PartiObject Robot5 = new RobotR(1750, 950, this);
         Robot5.setTeamType(PartiObject.ENEMY_TEAM);
         particularObjectManager.addObject(Robot5);
-        ///
-        boss = new BossEnemy(1500, 500, this);
-        boss.setTeamType(PartiObject.ENEMY_TEAM);
-        boss.setDirection(PartiObject.LEFT_DIR);
-        particularObjectManager.addObject(boss);
-
-        boss2 = new FinalBoss(2500, 500, this);
+       
+        //boss 2 manh nhat
+        boss2 = new FinalBoss(2600, 630, this);
         boss2.setTeamType(PartiObject.ENEMY_TEAM);
         boss2.setDirection(PartiObject.LEFT_DIR);
         particularObjectManager.addObject(boss2);
@@ -319,7 +320,9 @@ public class WorldState extends State {
                     g2.drawString("Press enter to continue!", 485, 305);
                     break;
                 case TUTORIAL:
-                    backgroundMap.draw(g2);
+                    //backgroundMap.draw(g2);
+                    g2.setColor(Color.BLACK);
+                    g2.fillRect(0, 0, FrameGame.SCREEN_WIDTH, FrameGame.SCREEN_HEIGHT);
                     if (tutorialState == MEETFINALBOSS) {
                         particularObjectManager.draw(g2);
                     }

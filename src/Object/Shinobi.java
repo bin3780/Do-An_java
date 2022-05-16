@@ -113,7 +113,7 @@ public class Shinobi extends Character{
         // TODO Auto-generated method stub
         if(!getIsJumping()){
             setIsJumping(true);
-            setSpeedY(-8.0f);           
+            setSpeedY(-6.0f);           
             flyBackAnim.reset();
             flyForwardAnim.reset();
         }
