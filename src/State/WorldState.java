@@ -450,6 +450,14 @@ public class WorldState extends State {
 
                     bgMusic.loop();
                 }
+                if (state == WorldState.PAUSEGAME) {
+                    if (previousState == WorldState.GAMEPLAY)
+                        switchState(WorldState.GAMEPLAY);
+                    else
+                        switchState(WorldState.TUTORIAL);
+
+                    bgMusic.loop();
+                }
                 if (state == WorldState.TUTORIAL && storyTutorial >= 1) {
                     if (storyTutorial <= 3) {
                         storyTutorial++;

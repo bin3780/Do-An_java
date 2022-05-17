@@ -3,6 +3,7 @@ package UI;
 import javax.swing.JPanel;
 
 import State.State;
+import State.StateMenu;
 import State.WorldState;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
@@ -21,7 +22,7 @@ public class PanelGame extends JPanel implements Runnable,KeyListener{
     
         public PanelGame(){
     
-            //gameState = new MenuState(this);
+            gameState = new StateMenu(this);
             gameState = new WorldState(this);
             
             inputManager = new InputController(gameState);
