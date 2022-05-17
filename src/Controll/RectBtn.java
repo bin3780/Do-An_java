@@ -38,7 +38,7 @@ public class RectBtn extends Btn
 		g.drawRect(posX + 1, posY + 1, width - 2, height - 2);
 		
 		g.setColor(Color.WHITE);
-		g.setFont(new Font("TimesRoman", Font.PLAIN, 14)); 
+		g.setFont(new Font("TimesRoman", Font.PLAIN, 50));
 		g.drawString(text, posX + paddingTextX, posY + paddingTextY);
     }
     
