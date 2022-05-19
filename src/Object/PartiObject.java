@@ -197,7 +197,7 @@ public abstract class PartiObject extends GObject{
                         // switch state to fey if object die
                         
                         
-                        System.out.println("eat damage.... from collision with enemy........ "+object.getDamage());
+                        // System.out.println("eat damage.... from collision with enemy........ "+object.getDamage());
                         beHurt(object.getDamage());
                     }
                     
@@ -239,7 +239,7 @@ public abstract class PartiObject extends GObject{
                 break;
                 
             case NOBEHURT:
-                System.out.println("state = nobehurt");
+                // System.out.println("state = nobehurt");
                 if(System.nanoTime() - startTimeNoBeHurt > timeForNoBeHurt)
                     state = ALIVE;
                 break;

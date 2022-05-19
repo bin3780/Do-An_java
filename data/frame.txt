@@ -1,442 +1,419 @@
 
-158
+152
+
+uihp
+image data/AssetGameDoAnJV/ui_HP/topbar.png
+x 0
+y 0
+w 425
+h 136
+
+dragonshoot1
+image data/AssetGameJV2d.png
+x 622
+y 691
+w 220
+h 90
+
+dragonshoot2
+image data/AssetGameJV2d.png
+x 833
+y 691
+w 220
+h 90
+
+dragonshoot3
+image data/AssetGameJV2d.png
+x 1046
+y 691
+w 220
+h 90
+
+dragonshoot4
+image data/AssetGameJV2d.png
+x 622
+y 810
+w 220
+h 90
+
+dragonshoot5
+image data/AssetGameJV2d.png
+x 862
+y 810
+w 255
+h 100
 
 idle1
-image data/megasprite.png
-x 530
-y 40
-w 80
-h 90
+image data/AssetGameJV2d.png
+x 20
+y 370
+w 65
+h 97
 
 idle2
-image data/megasprite.png
-x 616
-y 40
-w 80
-h 90
+image data/AssetGameJV2d.png
+x 20
+y 370
+w 65
+h 97
 
 idle3
-image data/megasprite.png
-x 702
-y 40
-w 80
-h 90
+image data/AssetGameJV2d.png
+x 20
+y 370
+w 65
+h 97
 
 idleshoot1
-image data/megasprite.png
-x 5
-y 418
-w 80
-h 90
-
-
-
-
-
+image data/AssetGameJV2d.png
+x 660
+y 345
+w 125
+h 140
 
 
 run1
-image data/megasprite.png
-x 800
-y 43
-w 75
-h 90
+image data/AssetGameJV2d.png
+x 135
+y 367
+w 65
+h 116
 
 run2
-image data/megasprite.png
-x 876
-y 43
-w 54
-h 90
+image data/AssetGameJV2d.png
+x 250
+y 367
+w 65
+h 116
 
 run3
-image data/megasprite.png
-x 929
-y 43
-w 60
-h 90
+image data/AssetGameJV2d.png
+x 355
+y 367
+w 65
+h 116
 
 run4
-image data/megasprite.png
-x 989
-y 43
-w 81
-h 90
+image data/AssetGameJV2d.png
+x 465
+y 367
+w 65
+h 116
 
 run5
-image data/megasprite.png
-x 1071
-y 43
-w 83
-h 90
+image data/AssetGameJV2d.png
+x 135
+y 367
+w 65
+h 116
 
 run6
-image data/megasprite.png
-x 1157
-y 43
-w 72
-h 90
+image data/AssetGameJV2d.png
+x 250
+y 367
+w 65
+h 116
 
 run7
-image data/megasprite.png
-x 1228
-y 43
-w 57
-h 90
+image data/AssetGameJV2d.png
+x 355
+y 367
+w 65
+h 116
 
 run8
-image data/megasprite.png
-x 1287
-y 43
-w 63
-h 90
+image data/AssetGameJV2d.png
+x 465
+y 367
+w 65
+h 116
 
 run9
-image data/megasprite.png
-x 1355
-y 43
-w 80
-h 90
+image data/AssetGameJV2d.png
+x 135
+y 367
+w 65
+h 116
 
 run10
-image data/megasprite.png
-x 1435
-y 43
-w 86
-h 90
+image data/AssetGameJV2d.png
+x 250
+y 367
+w 65
+h 116
 
 run11
-image data/megasprite.png
-x 1522
-y 43
-w 75
-h 90
+image data/AssetGameJV2d.png
+x 355
+y 367
+w 65
+h 116
 
 runshoot1
-image data/megasprite.png
-x 724
-y 173
-w 75
-h 90
+image data/AssetGameJV2d.png
+x 660
+y 345
+w 125
+h 140
 
 runshoot2
-image data/megasprite.png
-x 799
-y 173
-w 82
-h 90
+image data/AssetGameJV2d.png
+x 780
+y 345
+w 125
+h 140
 
 runshoot3
-image data/megasprite.png
-x 880
-y 173
-w 89
-h 90
+image data/AssetGameJV2d.png
+x 660
+y 345
+w 125
+h 140
 
 
 runshoot4
-image data/megasprite.png
-x 970
-y 173
-w 98
-h 90
+image data/AssetGameJV2d.png
+x 780
+y 345
+w 125
+h 140
 
 runshoot5
-image data/megasprite.png
-x 1068
-y 173
-w 88
-h 90
+image data/AssetGameJV2d.png
+x 660
+y 345
+w 125
+h 140
 
 runshoot6
-image data/megasprite.png
-x 1158
-y 173
-w 77
-h 90
+image data/AssetGameJV2d.png
+x 780
+y 345
+w 125
+h 140
 
 runshoot7
-image data/megasprite.png
-x 1236
-y 173
-w 83
-h 90
+image data/AssetGameJV2d.png
+x 660
+y 345
+w 125
+h 140
 
 runshoot8
-image data/megasprite.png
-x 1320
-y 173
-w 87
-h 90
+image data/AssetGameJV2d.png
+x 780
+y 345
+w 125
+h 140
 
 runshoot9
-image data/megasprite.png
-x 1408
-y 173
-w 95
-h 90
+image data/AssetGameJV2d.png
+x 660
+y 345
+w 125
+h 140
 
 runshoot10
-image data/megasprite.png
-x 1503
-y 173
-w 90
-h 90
+image data/AssetGameJV2d.png
+x 780
+y 345
+w 125
+h 140
 
 
 
 
 dick1
-image data/megasprite.png
-x 443
-y 439
-w 68
-h 69
+image data/AssetGameJV2d.png
+x 120
+y 260
+w 60
+h 100
 
 dick2
-image data/megasprite.png
-x 514
-y 439
-w 68
-h 69
+image data/AssetGameJV2d.png
+x 120
+y 260
+w 60
+h 100
 
 dick3
-image data/megasprite.png
-x 585
-y 439
-w 68
-h 69
+image data/AssetGameJV2d.png
+x 120
+y 260
+w 60
+h 100
 
 dick4
-image data/megasprite.png
-x 656
-y 439
-w 68
-h 69
+image data/AssetGameJV2d.png
+x 120
+y 260
+w 60
+h 100
 
 
 
 
 flyingup1
-image data/megasprite.png
-x 2
-y 181
-w 62
-h 95
+image data/AssetGameJV2d.png
+x 20
+y 256
+w 65
+h 105
 
 flyingup2
-image data/megasprite.png
-x 76
-y 170
-w 42
-h 107
+image data/AssetGameJV2d.png
+x 40
+y 510
+w 100
+h 100
 
 flyingup3
-image data/megasprite.png
-x 127
-y 160
-w 52
-h 117
+image data/AssetGameJV2d.png
+x 180
+y 510
+w 100
+h 100
 
 flyingup4
-image data/megasprite.png
-x 185
-y 171
-w 60
-h 107
+image data/AssetGameJV2d.png
+x 310
+y 510
+w 100
+h 100
 
 flyingup5
-image data/megasprite.png
-x 248
-y 169
+image data/AssetGameJV2d.png
+x 260
+y 250
 w 70
-h 107
+h 105
 
 
 
 flyingupshoot1
-image data/megasprite.png
-x 2
-y 302
-w 77
-h 95
+image data/AssetGameJV2d.png
+x 40
+y 510
+w 100
+h 100
 
 flyingupshoot2
-image data/megasprite.png
-x 79
-y 293
-w 64
-h 107
+image data/AssetGameJV2d.png
+x 310
+y 510
+w 100
+h 100
 
 flyingupshoot3
-image data/megasprite.png
-x 144
-y 280
-w 70
-h 117
+image data/AssetGameJV2d.png
+x 40
+y 510
+w 100
+h 100
 
 flyingupshoot4
-image data/megasprite.png
-x 212
-y 292
-w 82
-h 107
+image data/AssetGameJV2d.png
+x 310
+y 510
+w 100
+h 100
 
 flyingupshoot5
-image data/megasprite.png
-x 295
-y 294
-w 80
-h 107
+image data/AssetGameJV2d.png
+x 310
+y 510
+w 100
+h 100
+
 
 
 
 
 landing1
-image data/megasprite.png
-x 330
-y 180
-w 62
-h 95
+image data/AssetGameJV2d.png
+x 20
+y 370
+w 65
+h 97
 
 landing2
-image data/megasprite.png
-x 392
-y 195
-w 77
-h 82
+image data/AssetGameJV2d.png
+x 20
+y 370
+w 65
+h 97
 
 
 
 hurting1
-image data/megasprite.png
-x 15
-y 798
-w 80
-h 95
+image data/AssetGameJV2d.png
+x 20
+y 370
+w 65
+h 97
 
-hurting2
-image data/megasprite.png
-x 87
-y 798
-w 80
-h 95
 
-hurting3
-image data/megasprite.png
-x 171
-y 798
-w 80
-h 95
 
-hurting4
-image data/megasprite.png
-x 253
-y 798
-w 80
-h 95
-
-hurting5
-image data/megasprite.png
-x 341
-y 798
-w 80
-h 95
-
-hurting6
-image data/megasprite.png
-x 425
-y 798
-w 80
-h 95
-
-hurting7
-image data/megasprite.png
-x 513
-y 798
-w 80
-h 95
-
-hurting8
-image data/megasprite.png
-x 596
-y 798
-w 80
-h 95
-
-hurting9
-image data/megasprite.png
-x 685
-y 798
-w 80
-h 95
-
-hurting10
-image data/megasprite.png
-x 772
-y 798
-w 80
-h 95
 
 
 
 
 bullet1_1
-image data/megasprite.png
-x 1
-y 950
-w 26
-h 26
+image data/AssetGameJV2d.png
+x 605
+y 585
+w 150
+h 65
 
 bullet1_2
-image data/megasprite.png
-x 52
-y 942
-w 40
-h 40
+image data/AssetGameJV2d.png
+x 760
+y 585
+w 150
+h 65
 
 bullet1_3
-image data/megasprite.png
-x 110
-y 929
-w 60
-h 60
+image data/AssetGameJV2d.png
+x 930
+y 585
+w 150
+h 65
 
 bullet1_4
-image data/megasprite.png
-x 198
-y 948
-w 100
-h 30
+image data/AssetGameJV2d.png
+x 1090
+y 585
+w 150
+h 65
 
 bullet1_5
-image data/megasprite.png
-x 294
-y 948
-w 90
-h 30
+image data/AssetGameJV2d.png
+x 605
+y 585
+w 150
+h 65
 
 bullet1_6
-image data/megasprite.png
-x 403
-y 948
-w 100
-h 30
+image data/AssetGameJV2d.png
+x 760
+y 585
+w 150
+h 65
 
 bullet1_7
-image data/megasprite.png
-x 536
-y 929
-w 100
-h 55
+image data/AssetGameJV2d.png
+x 930
+y 585
+w 150
+h 65
 
 bullet1_8
-image data/megasprite.png
-x 661
-y 929
-w 100
-h 55
-
+image data/AssetGameJV2d.png
+x 1090
+y 585
+w 150
+h 65
 
 bullet2_1
 image data/enemysprite1.png
@@ -904,26 +881,33 @@ h 110
 
 
 redeye1
-image data/enemysprite2.png
-x 5
-y 11
-w 135
-h 89
+image data/Asset_Bakemono.png
+x 1240
+y 420
+w 115
+h 160
 
 redeye2
-image data/enemysprite2.png
-x 141
-y 11
-w 135
-h 89
+image data/Asset_Bakemono.png
+x 1385
+y 420
+w 115
+h 160
+
+redeye3
+image data/Asset_Bakemono.png
+x 1540
+y 420
+w 115
+h 160
 
 
 avatar
-image data/megasprite.png
-x 1040
-y 490
-w 250
-h 210
+image data/AssetGameJV2d.png
+x 45
+y 700
+w 255
+h 220
 
 smallredgun1
 image data/enemysprite1.png
@@ -935,25 +919,25 @@ h 39
 
 
 darkraise1
-image data/enemysprite1.png
-x 2
-y 670
-w 127
-h 80
+image data/Asset_Bakemono.png
+x 1615
+y 600
+w 175
+h 120
 
 darkraise2
-image data/enemysprite1.png
-x 134
-y 675
-w 121
-h 80
+image data/Asset_Bakemono.png
+x 1384
+y 600
+w 175
+h 120
 
 darkraise3
-image data/enemysprite1.png
-x 265
-y 681
-w 110
-h 80
+image data/Asset_Bakemono.png
+x 1170
+y 600
+w 175
+h 120
 
 
 
@@ -1037,103 +1021,76 @@ h 114
 
 
 rocketUp1
-image data/enemysprite2.png
-x 24
-y 146
-w 33
-h 33
+image data/Asset_Bakemono.png
+x 1540
+y 30
+w 60
+h 60
 
 rocket1
-image data/enemysprite2.png
-x 24
-y 189
-w 33
-h 26
+image data/Asset_Bakemono.png
+x 1390
+y 30
+w 50
+h 60
 
 rocketDown1
-image data/enemysprite2.png
-x 24
-y 223
-w 33
-h 33
+image data/Asset_Bakemono.png
+x 1620
+y 30
+w 60
+h 60
 
 
 boss_idle1
-image data/enemysprite2.png
-x 290
-y 100
-w 105
-h 163
+image data/Asset_Bakemono.png
+x 10
+y 0
+w 130
+h 200
 
 boss_idle2
-image data/enemysprite2.png
-x 405
-y 100
-w 105
-h 163
+image data/Asset_Bakemono.png
+x 170
+y 0
+w 180
+h 200
 
 boss_idle3
-image data/enemysprite2.png
-x 518
-y 100
-w 110
-h 163
+image data/Asset_Bakemono.png
+x 375
+y 0
+w 210
+h 200
 
 boss_idle4
-image data/enemysprite2.png
-x 637
-y 100
-w 115
-h 163
+image data/Asset_Bakemono.png
+x 620
+y 0
+w 260
+h 200
 
-boss_idle5
-image data/enemysprite2.png
-x 766
-y 100
-w 120
-h 163
 
 boss_shooting1
-image data/enemysprite2.png
-x 730
-y 748
-w 150
-h 180
+image data/Asset_Bakemono.png
+x 10
+y 0
+w 130
+h 200
 
 boss_shooting2
-image data/enemysprite2.png
-x 889
-y 748
-w 150
-h 180
+image data/Asset_Bakemono.png
+x 170
+y 0
+w 180
+h 200
 
 boss_slide1
-image data/enemysprite2.png
-x 220
-y 660
-w 166
-h 67
-
-boss_slide2
-image data/enemysprite2.png
-x 396
-y 660
-w 166
-h 67
-
-boss_slide3
-image data/enemysprite2.png
-x 566
-y 660
-w 166
-h 67
-
-boss_slide4
-image data/enemysprite2.png
-x 736
-y 660
-w 166
-h 67
+image data/Asset_Bakemono.png
+x 900
+y 30
+w 420
+h 160
 
 hearth
 image data/megasprite.png
@@ -1142,9 +1099,16 @@ y 1388
 w 30
 h 30
 
-gamewin
+gamewin1
 image data/textgame.png
 x 80
-y 60
-w 440
-h 60
+y 104
+w 458
+h 146
+
+gamewin2
+image data/textgame.png
+x 80
+y 104
+w 458
+h 146

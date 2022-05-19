@@ -32,7 +32,7 @@ public class Cam extends GObject{
             Shinobi mainCharacter = getGameWorld().shinobi;
 
             if(mainCharacter.getPosX() - getPosX() > 400) setPosX(mainCharacter.getPosX() - 400);
-            if(mainCharacter.getPosX() - getPosX() < 200) setPosX(mainCharacter.getPosX() - 200);
+            if(mainCharacter.getPosX() - getPosX() < 450) setPosX(mainCharacter.getPosX() - 450);
 
             if(mainCharacter.getPosY() - getPosY() > 400) setPosY(mainCharacter.getPosY() - 400); // bottom
             else if(mainCharacter.getPosY() - getPosY() < 250) setPosY(mainCharacter.getPosY() - 250);// top 

@@ -3,6 +3,7 @@ package UI;
 import javax.swing.JPanel;
 
 import State.State;
+import State.StateMenu;
 import State.WorldState;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
@@ -21,7 +22,7 @@ public class PanelGame extends JPanel implements Runnable,KeyListener{
     
         public PanelGame(){
     
-            //gameState = new MenuState(this);
+            gameState = new StateMenu(this);
             gameState = new WorldState(this);
             
             inputManager = new InputController(gameState);
@@ -32,7 +33,6 @@ public class PanelGame extends JPanel implements Runnable,KeyListener{
             gameThread = new Thread(this);
             gameThread.start();
         }
-        int a = 0;
         @Override
         public void run() {
     
@@ -40,7 +40,7 @@ public class PanelGame extends JPanel implements Runnable,KeyListener{
             long currentTime;
             long sleepTime;
     
-            long period = 1000000000/80;
+            long period = 1000000000/59;
     
             while(isRunning){
     

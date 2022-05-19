@@ -10,15 +10,22 @@ import Anima.Animation;
 
 public class Shinobi extends Character{
 
-    private Animation runForwardAnim, runBackAnim, runShootingForwarAnim, runShootingBackAnim;
-    private Animation idleForwardAnim, idleBackAnim, idleShootingForwardAnim, idleShootingBackAnim;
+    private Animation runForwardAnim, runBackAnim,
+     runShootingForwarAnim, runShootingBackAnim,
+     runAttackFroAnimation,runAttackBackAnimation,
+    flyShootingForwardAnim,flyShootingBackAnim;
+    private Animation idleForwardAnim, idleBackAnim, 
+    idleShootingForwardAnim, idleShootingBackAnim,
+    idleAttackForwardAnimation,idleAttackBackAnimation;
     private Animation dickForwardAnim, dickBackAnim;
-    private Animation flyForwardAnim, flyBackAnim, flyShootingForwardAnim, flyShootingBackAnim;
+    private Animation flyForwardAnim, flyBackAnim, 
+    flyAttackForwardAnim, flyAttackBackAnim;
     private Animation landingForwardAnim, landingBackAnim;
-    
+    private Animation idleShooting2ForwardAnim,idleShooting2BackAnim,runShooting2ForwardAnim,runShooting2BackAnim;
     private Animation climWallForward, climWallBack;
     
     private long lastShootingTime;
+    private long lastAttakingTime;
     private boolean isShooting = false;
     
     private AudioClip hurtingSound;
@@ -66,6 +73,10 @@ public class Shinobi extends Character{
         idleShootingForwardAnim = Loader_CacheData.getInstance().getAnimation("idleshoot");
         idleShootingBackAnim = Loader_CacheData.getInstance().getAnimation("idleshoot");
         idleShootingBackAnim.flipAllImage();
+
+        // idleShooting2ForwardAnim = Loader_CacheData.getInstance().getAnimation("dragonshoot");
+        // idleShooting2BackAnim = Loader_CacheData.getInstance().getAnimation("dragonshoot");
+        // idleShooting2BackAnim.flipAllImage();
         
         runShootingForwarAnim = Loader_CacheData.getInstance().getAnimation("runshoot");
         runShootingBackAnim = Loader_CacheData.getInstance().getAnimation("runshoot");
@@ -74,14 +85,27 @@ public class Shinobi extends Character{
         flyShootingForwardAnim = Loader_CacheData.getInstance().getAnimation("flyingupshoot");
         flyShootingBackAnim = Loader_CacheData.getInstance().getAnimation("flyingupshoot");
         flyShootingBackAnim.flipAllImage();
+
+        //// Thêm đánh kiếm
+        // idleAttackForwardAnimation = Loader_CacheData.getInstance().getAnimation("idleatk");
+        // idleAttackBackAnimation = Loader_CacheData.getInstance().getAnimation("idleatk");
+        // idleAttackBackAnimation.flipAllImage();
+
+        // runAttackFroAnimation =  Loader_CacheData.getInstance().getAnimation("idleatk");
+        // runAttackBackAnimation =  Loader_CacheData.getInstance().getAnimation("idleatk");
+        // runAttackBackAnimation.flipAllImage();
+
+        // flyAttackForwardAnim = Loader_CacheData.getInstance().getAnimation("idleatk");
+        // flyAttackBackAnim =  Loader_CacheData.getInstance().getAnimation("idleatk");
+        // flyAttackBackAnim.flipAllImage();
     }
 
     @Override
     public void run() {
         // TODO Auto-generated method stub
         if(getDirection() == LEFT_DIR)
-        setSpeedX(-3);
-    else setSpeedX(3);
+        setSpeedX(-6);
+    else setSpeedX(6);
     }
 
     @Override
@@ -89,7 +113,7 @@ public class Shinobi extends Character{
         // TODO Auto-generated method stub
         if(!getIsJumping()){
             setIsJumping(true);
-            setSpeedY(-7.0f);           
+            setSpeedY(-6.0f);           
             flyBackAnim.reset();
             flyForwardAnim.reset();
         }
@@ -151,7 +175,7 @@ public class Shinobi extends Character{
             
             shooting1.play();
             
-            Bullet bullet = new BluBullet(getPosX(), getPosY(), getGameWorld());
+            Bullet bullet = new Shuriken(getPosX(), getPosY(), getGameWorld());
             if(getDirection() == LEFT_DIR) {
                 bullet.setSpeedX(-10);
                 bullet.setPosX(bullet.getPosX() - 40);
@@ -178,11 +202,41 @@ public class Shinobi extends Character{
             
         }
     }
-    // @Override
-    // public void hurtingCallback(){
-    //     System.out.println("Call back hurting");
-    //     hurtingSound.play();
-    // }
+        public void attack2() 
+        {
+        // TODO Auto-generated method stub
+        if(!isShooting && !getIsDicking()){
+            
+            shooting1.play();
+            
+            Bullet bullet = new DragoShoot(getPosX(), getPosY(), getGameWorld());
+            if(getDirection() == LEFT_DIR) {
+                bullet.setSpeedX(-10);
+                bullet.setPosX(bullet.getPosX() - 40);
+                if(getSpeedX() != 0 && getSpeedY() == 0){
+                    bullet.setPosX(bullet.getPosX() - 10);
+                    bullet.setPosY(bullet.getPosY() - 5);
+                }
+            }else {
+                bullet.setSpeedX(10);
+                bullet.setPosX(bullet.getPosX() + 40);
+                if(getSpeedX() != 0 && getSpeedY() == 0){
+                    bullet.setPosX(bullet.getPosX() + 10);
+                    bullet.setPosY(bullet.getPosY() - 5);
+                }
+            }
+            if(getIsJumping())
+                bullet.setPosY(bullet.getPosY() - 20);
+            
+            bullet.setTeamType(getTeamType());
+            getGameWorld().bulletManager.addObject(bullet);
+            
+            lastShootingTime = System.nanoTime();
+            isShooting = true;
+            
+        }
+    }
+
 
     @Override
     public Rectangle getBoundForCollisionWithEnemy() {
