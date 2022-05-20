@@ -113,7 +113,8 @@ public class Shinobi extends Character{
         // TODO Auto-generated method stub
         if(!getIsJumping()){
             setIsJumping(true);
-            setSpeedY(-6.0f);           
+            setSpeedY(-+10.0f);
+            
             flyBackAnim.reset();
             flyForwardAnim.reset();
         }
@@ -125,13 +126,13 @@ public class Shinobi extends Character{
             rectLeftWall.x -= 1;
             
             if(getGameWorld().physicalMap.haveCollisionWithRightWall(rectRightWall)!=null && getSpeedX() > 0){
-                setSpeedY(-5.0f);
+                setSpeedY(-7.0f);
                 //setSpeedX(-1);
                 flyBackAnim.reset();
                 flyForwardAnim.reset();
                 //setDirection(LEFT_DIR);
             }else if(getGameWorld().physicalMap.haveCollisionWithLeftWall(rectLeftWall)!=null && getSpeedX() < 0){
-                setSpeedY(-5.0f);
+                setSpeedY(-7.0f);
                 //setSpeedX(1);
                 flyBackAnim.reset();
                 flyForwardAnim.reset();
@@ -265,7 +266,7 @@ public class Shinobi extends Character{
         
             case ALIVE:
             case NOBEHURT:
-                if(getState() == NOBEHURT && (System.nanoTime()/10000000)%2!=1)
+                if(getState() == NOBEHURT && (System.nanoTime()/20000000)%2!=1)
                 {
                     // System.out.println("Plash...");
                 }else{
@@ -363,10 +364,6 @@ public class Shinobi extends Character{
                     behurtBackAnim.setCurrentFrame(behurtForwardAnim.getCurrentFrame());
                     behurtBackAnim.draw((int) (getPosX() - getGameWorld().camera.getPosX()), (int) getPosY() - (int) getGameWorld().camera.getPosY(), g2);
                 }
-                break;
-             
-            case FEY:
-                
                 break;
 
         }
